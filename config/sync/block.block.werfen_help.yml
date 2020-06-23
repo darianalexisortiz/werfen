@@ -1,0 +1,22 @@
+uuid: 7ccd8cd9-3887-49a5-a62c-c5553dcdf9c1
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - werfen
+_core:
+  default_config_hash: JPtjio142VL7z1Y-K1aWkTXu5wId7r4-zNUHozwLqf0
+id: werfen_help
+theme: werfen
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: ba0bc726-24c0-42ab-8bd1-88d42598310e
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - werfen
+_core:
+  default_config_hash: aJ6ps0sJm9MtQffqINgRms1JaSQgjsg68REaPdN-BGk
+id: werfen_content
+theme: werfen
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

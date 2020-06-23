@@ -1,0 +1,22 @@
+uuid: e04c83d1-5a29-4dec-b415-4daea6597c53
+langcode: es
+status: true
+dependencies:
+  theme:
+    - werfen
+_core:
+  default_config_hash: IzSbK3zk-Gon9y7WLEWop15Wn__7LeKzBJIXqajlb00
+id: werfen_local_tasks
+theme: werfen
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

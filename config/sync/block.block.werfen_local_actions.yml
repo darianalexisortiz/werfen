@@ -1,0 +1,20 @@
+uuid: b5a50ab8-b4ad-4c7c-b968-4baf5dfc20a8
+langcode: es
+status: true
+dependencies:
+  theme:
+    - werfen
+_core:
+  default_config_hash: rKurRLaH08AjwE5wsNzeL2fa77rF5pXKSR9WopsFYyI
+id: werfen_local_actions
+theme: werfen
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
