@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_image
+    - field.field.node.article.field_weight
     - image.style.thumbnail
     - node.type.article
   module:
     - image
     - path
     - text
+    - weight
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
@@ -42,6 +44,12 @@ content:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+  field_weight:
+    weight: 121
+    settings: {  }
+    third_party_settings: {  }
+    type: weight_selector
+    region: content
   langcode:
     type: language_select
     weight: 2

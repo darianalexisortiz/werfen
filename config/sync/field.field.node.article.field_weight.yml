@@ -1,0 +1,24 @@
+uuid: ed244c42-d744-4ca5-a25b-fcbe906efa8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.article
+  module:
+    - weight
+id: node.article.field_weight
+field_name: field_weight
+entity_type: node
+bundle: article
+label: Posición
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

@@ -31,39 +31,17 @@ display:
         options: {  }
       empty:
         area_text_custom:
-          admin_label: ''
-          content: 'No front page content has been created yet.<br/>Follow the <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">User Guide</a> to start building your site.'
-          empty: true
-          field: area_text_custom
-          group_type: group
           id: area_text_custom
-          label: ''
-          relationship: none
           table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
           tokenize: false
+          content: 'Aún no hay contenido.'
+          label: ''
           plugin_id: text_custom
-        node_listing_empty:
-          admin_label: ''
-          empty: true
-          field: node_listing_empty
-          group_type: group
-          id: node_listing_empty
-          label: ''
-          relationship: none
-          table: node
-          plugin_id: node_listing_empty
-          entity_type: node
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          empty: true
-          title: 'Bienvenido a [site:name]'
-          plugin_id: title
       exposed_form:
         type: basic
         options:
@@ -249,35 +227,11 @@ display:
           separator: ''
           hide_empty: false
       sorts:
-        sticky:
-          admin_label: ''
-          expose:
-            label: ''
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
-          relationship: none
-          table: node_field_data
-          plugin_id: boolean
-          entity_type: node
-          entity_field: sticky
-        created:
-          field: created
-          id: created
-          order: DESC
-          table: node_field_data
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          entity_type: node
-          entity_field: created
+        field_weight_value:
+          id: field_weight_value
+          table: node__field_weight
+          field: field_weight_value
+          plugin_id: standard
       style:
         type: default
         options:
@@ -369,8 +323,8 @@ display:
       sitename_title: true
       path: rss.xml
       displays:
-        page_1: page_1
-        default: ''
+        default: '0'
+        page_1: '0'
       pager:
         type: some
         options:
@@ -388,6 +342,9 @@ display:
           relationship: none
           view_mode: rss
       display_extenders: {  }
+      sorts: {  }
+      defaults:
+        sorts: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
@@ -509,6 +466,20 @@ display:
           plugin_id: rendered_entity
       defaults:
         fields: false
+        sorts: false
+      sorts:
+        field_weight_value:
+          id: field_weight_value
+          table: node__field_weight
+          field: field_weight_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     display_plugin: page
     display_title: Page
     id: page_1
