@@ -3,8 +3,10 @@ langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
+    - node.type.article
   module:
     - node
     - user
@@ -29,39 +31,17 @@ display:
         options: {  }
       empty:
         area_text_custom:
-          admin_label: ''
-          content: 'No front page content has been created yet.<br/>Follow the <a target="_blank" href="https://www.drupal.org/docs/user_guide/en/index.html">User Guide</a> to start building your site.'
-          empty: true
-          field: area_text_custom
-          group_type: group
           id: area_text_custom
-          label: ''
-          relationship: none
           table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
           tokenize: false
+          content: 'Aún no hay contenido.'
+          label: ''
           plugin_id: text_custom
-        node_listing_empty:
-          admin_label: ''
-          empty: true
-          field: node_listing_empty
-          group_type: group
-          id: node_listing_empty
-          label: ''
-          relationship: none
-          table: node
-          plugin_id: node_listing_empty
-          entity_type: node
-        title:
-          id: title
-          table: views
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          empty: true
-          title: 'Bienvenido a [site:name]'
-          plugin_id: title
       exposed_form:
         type: basic
         options:
@@ -168,6 +148,48 @@ display:
           plugin_id: language
           entity_type: node
           entity_field: langcode
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: in
+          value:
+            article: article
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
       pager:
         type: full
         options:
@@ -198,39 +220,18 @@ display:
           query_comment: ''
           query_tags: {  }
       row:
-        type: 'entity:node'
+        type: fields
         options:
-          view_mode: teaser
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       sorts:
-        sticky:
-          admin_label: ''
-          expose:
-            label: ''
-          exposed: false
-          field: sticky
-          group_type: group
-          id: sticky
-          order: DESC
-          relationship: none
-          table: node_field_data
-          plugin_id: boolean
-          entity_type: node
-          entity_field: sticky
-        created:
-          field: created
-          id: created
-          order: DESC
-          table: node_field_data
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
-          entity_type: node
-          entity_field: created
+        field_weight_value:
+          id: field_weight_value
+          table: node__field_weight
+          field: field_weight_value
+          plugin_id: standard
       style:
         type: default
         options:
@@ -242,7 +243,58 @@ display:
       header: {  }
       footer: {  }
       relationships: {  }
-      fields: {  }
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: default
+          entity_type: node
+          plugin_id: rendered_entity
       arguments: {  }
       display_extenders: {  }
     display_plugin: default
@@ -256,7 +308,12 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -266,8 +323,8 @@ display:
       sitename_title: true
       path: rss.xml
       displays:
-        page_1: page_1
-        default: ''
+        default: '0'
+        page_1: '0'
       pager:
         type: some
         options:
@@ -285,17 +342,144 @@ display:
           relationship: none
           view_mode: rss
       display_extenders: {  }
+      sorts: {  }
+      defaults:
+        sorts: false
     cache_metadata:
       contexts:
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'
   page_1:
     display_options:
       path: node
       display_extenders: {  }
+      fields:
+        rendered_entity:
+          id: rendered_entity
+          table: node
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: Resumen
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: teaser
+          entity_type: node
+          plugin_id: rendered_entity
+        rendered_entity_1:
+          id: rendered_entity_1
+          table: node
+          field: rendered_entity
+          relationship: none
+          group_type: group
+          admin_label: 'Información completa'
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          view_mode: full
+          entity_type: node
+          plugin_id: rendered_entity
+      defaults:
+        fields: false
+        sorts: false
+      sorts:
+        field_weight_value:
+          id: field_weight_value
+          table: node__field_weight
+          field: field_weight_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
     display_plugin: page
     display_title: Page
     id: page_1
@@ -307,4 +491,9 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
-      tags: {  }
+      tags:
+        - 'config:core.entity_view_display.node.article.default'
+        - 'config:core.entity_view_display.node.article.rss'
+        - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.teaser'

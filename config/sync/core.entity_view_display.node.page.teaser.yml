@@ -1,52 +1,14 @@
 uuid: 54a62506-c75e-49e7-9548-0ee05de089e0
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.body
+    - field.field.node.page.field_attached_file
+    - field.field.node.page.field_image
     - node.type.page
   module:
-    - layout_builder
-    - layout_discovery
-    - text
     - user
-third_party_settings:
-  layout_builder:
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          a015872f-d038-4a11-a828-08423d9fe5bd:
-            uuid: a015872f-d038-4a11-a828-08423d9fe5bd
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:page:body'
-              formatter:
-                label: hidden
-                type: text_summary_or_trimmed
-                settings:
-                  trim_length: 600
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
-          a5dfc687-e690-4a0d-bed1-c43782a70fd9:
-            uuid: a5dfc687-e690-4a0d-bed1-c43782a70fd9
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:page:links'
-            additional: {  }
-            weight: 1
-        third_party_settings: {  }
 _core:
   default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
 id: node.page.teaser
@@ -54,18 +16,12 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 100
-    region: content
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
   links:
     weight: 101
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_attached_file: true
+  field_image: true
   langcode: true
