@@ -10,6 +10,8 @@ dependencies:
     - node.type.article
     - responsive_image.styles.wide
   module:
+    - field_formatter_class
+    - lazy
     - responsive_image
     - user
 _core:
@@ -26,7 +28,11 @@ content:
     settings:
       responsive_image_style: wide
       image_link: ''
-    third_party_settings: {  }
+    third_party_settings:
+      field_formatter_class:
+        class: ''
+      lazy:
+        lazy_image: '1'
     label: hidden
 hidden:
   body: true

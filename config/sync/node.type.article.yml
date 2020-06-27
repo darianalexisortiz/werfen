@@ -1,13 +1,19 @@
 uuid: 06509b2b-b0dd-4bed-ac4e-ef849072daa3
 langcode: es
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Artículo
 type: article
 description: 'Use los <em>artículos</em> para contenido que tenga relevancia temporal como las noticias o las publicaciones en blogs.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

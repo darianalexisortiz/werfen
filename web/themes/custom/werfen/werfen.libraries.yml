@@ -1,6 +1,11 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
+      https://unpkg.com/swiper/css/swiper.min.css: { type: external, minified: true }
+      scss/style.scss: {}
+global-scripts:
   js:
+    https://unpkg.com/swiper/js/swiper.min.js: { type: external }
     js/main.js: {}
+  dependencies:
+    - core/jquery
