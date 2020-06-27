@@ -1,0 +1,14 @@
+setting:
+  enable_watcher: 1
+  build_hook_css_alter: null
+  build_hook_cache_flush: null
+  build_hook_preprocess_page: null
+  less_compress: 1
+  less_cache_folder: 'public://sm-cache/less'
+  less_default_destination_folder: 'public://sm-style/less'
+  scss_compress: 1
+  scss_cache_folder: 'public://sm-cache/scss'
+  scss_default_destination_folder: 'public://sm-style/scss'
+_core:
+  default_config_hash: IZ7MPi4Pl38zxPAKTMW_V6Ak_eokKkM601iuyAdoqG0
+langcode: es

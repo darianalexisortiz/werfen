@@ -8,6 +8,7 @@ stylesheets-remove:
   - '@bootstrap4/css/style.css'
 libraries:
   - werfen/global-styling
+  - werfen/global-scripts
 regions:
   header: Header
   nav_branding: 'Navigation branding region'
