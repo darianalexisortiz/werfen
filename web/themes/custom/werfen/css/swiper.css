@@ -5,3 +5,6 @@
 nav.navbar{
  overflow: hidden;
 }
+.swiper-slide-h {
+    overflow-x: hidden;
+}

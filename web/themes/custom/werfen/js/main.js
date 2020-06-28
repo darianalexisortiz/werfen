@@ -8,7 +8,7 @@
 
             let id;
 
-            let swiperC;
+         /*   let swiperC;
             var settingC = {
                 wrapperClass: 'swiper-wrapper-c',
                 slideClass: 'swiper-slide-c',
@@ -26,7 +26,7 @@
                   enabled: false,
                 },
             };
-
+*/
             swiperC = new Swiper('.swiper-container-c2', settingC);
 
             let swiperV;
@@ -130,12 +130,12 @@
             CanvasJS.addColorSet("greenShades",
                     [
                     "#C5D7DB",
-                    "#00A3E0"               
+                    "#00A3E0"
                     ]);
             CanvasJS.addColorSet("torta",
                     [
                     "#C5D7DB",
-                    "#00A3E0"               
+                    "#00A3E0"
                     ]);
           var chart = new CanvasJS.Chart("chart1", {
             animationEnabled: true,
@@ -149,7 +149,7 @@
               text: " Net Profit",
               fontSize: 23,
               fontColor:"#28373C"
-            }], 
+            }],
             axisX: {
               title: "  ",
               gridDashType: "dot",
@@ -160,14 +160,14 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#ffffff", 
+              gridColor: "#ffffff",
               titleFontColor: "#ffffff",
               lineColor: "#ffffff",
               labelFontColor: "#ffffff",
               tickColor: "#ffffff"
             },
             axisY2: {
-              gridColor: "#000", 
+              gridColor: "#000",
               title: "Million €",
               titleFontColor: "#000",
               lineColor: "#000",
@@ -184,7 +184,7 @@
             backgroundColor: "#ffffff",
             data: [{
               type: "column",
-              showInLegend: false,      
+              showInLegend: false,
               yValueFormatString: "### Million €",
               indexLabel: "{y}",
               indexLabelPlacement: "outside",
@@ -206,7 +206,7 @@
               text: "Net Worth",
               fontSize: 23,
               fontColor:"#28373C"
-            }], 
+            }],
             axisX: {
               title: "  ",
               gridDashType: "dot",
@@ -217,14 +217,14 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#ffffff", 
+              gridColor: "#ffffff",
               titleFontColor: "#ffffff",
               lineColor: "#ffffff",
               labelFontColor: "#ffffff",
               tickColor: "#ffffff"
             },
             axisY2: {
-              gridColor: "#000", 
+              gridColor: "#000",
               title: "Million €",
               titleFontColor: "#000",
               lineColor: "#000",
@@ -241,7 +241,7 @@
             backgroundColor: "#ffffff",
             data: [{
               type: "column",
-              showInLegend: false,      
+              showInLegend: false,
               yValueFormatString: "#,### Million €",
               indexLabel: "{y}",
               indexLabelPlacement: "outside",
@@ -263,7 +263,7 @@
               text: "EBITA (Before Interest, Taxes, Depreciation & Amortization)",
               fontSize: 16,
               fontColor:"#28373C"
-            }], 
+            }],
             axisX: {
               title: "  ",
               gridDashType: "dot",
@@ -274,14 +274,14 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#ffffff", 
+              gridColor: "#ffffff",
               titleFontColor: "#ffffff",
               lineColor: "#ffffff",
               labelFontColor: "#ffffff",
               tickColor: "#ffffff"
             },
             axisY2: {
-              gridColor: "#000", 
+              gridColor: "#000",
               title: "Million €",
               titleFontColor: "#000",
               lineColor: "#000",
@@ -298,7 +298,7 @@
             backgroundColor: "#ffffff",
             data: [{
               type: "column",
-              showInLegend: false,      
+              showInLegend: false,
               yValueFormatString: "#,### Million €",
               indexLabel: "{y}",
               indexLabelPlacement: "outside",
@@ -320,7 +320,7 @@
               text: "Investment in R&D",
               fontSize: 23,
               fontColor:"#28373C"
-            }], 
+            }],
             axisX: {
               title: "  ",
               gridDashType: "dot",
@@ -331,7 +331,7 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#ffffff", 
+              gridColor: "#ffffff",
               titleFontColor: "#ffffff",
               lineColor: "#ffffff",
               labelFontColor: "#ffffff",
@@ -347,7 +347,7 @@
             backgroundColor: "#ffffff",
             data: [{
               type: "column",
-              showInLegend: false,      
+              showInLegend: false,
               yValueFormatString: "#,### Million €",
               indexLabel: "{y}",
               indexLabelPlacement: "outside",
