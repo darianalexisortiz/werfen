@@ -26,9 +26,9 @@
                   enabled: false,
                 },
             };
-*/
-            swiperC = new Swiper('.swiper-container-c2', settingC);
 
+            swiperC = new Swiper('.swiper-container-c2', settingC);
+*/
             let swiperV;
             var settingsV = {
 
