@@ -8,11 +8,19 @@
 .navbar-dark .navbar-brand img, .footer-dark .navbar-brand img {
     filter: invert(0);
 }
-h2 .field--name-title{
+.node--view-mode-teaser h2{
   position: absolute;
-  color: #fff;
   top: 50%;
   z-index: 999;
+}
+.node--view-mode-full h2{
+  position: absolute;
+  top: 200px;
+}
+
+h2 .field--name-title{
+  color: #fff;
+  font-size: 1.5em;
 }
 
 .region-content {

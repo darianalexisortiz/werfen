@@ -73,6 +73,7 @@
                     $( ".backbtntop" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight d-none');
                    $(swiperS).each(function(obj) {
                      swiperS[obj].keyboard.enable();
+                     console.log(this);
                    });
                },
                reachBeginning: function(){
