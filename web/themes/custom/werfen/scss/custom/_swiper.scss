@@ -8,9 +8,13 @@
     .swiper-slide-h{
       overflow: hidden;
     }
+    main .container-fluid{
+      margin:-10px 0 0!important;
+    }
 
     .swiper-wrapper {
        height: 100vh;
+       weight: 100vh;
     }
     .swiper-pagination-bullet {
       width: 20px;

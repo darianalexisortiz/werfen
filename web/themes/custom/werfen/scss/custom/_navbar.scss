@@ -13,6 +13,16 @@
   top: 50%;
   z-index: 999;
 }
+.node--view-mode-teaser img{
+  height: 100vh;
+  width:100vw;
+  object-fit: cover;
+}
+.node--view-mode-full img{
+  height: auto;
+  width:100vw;
+  object-fit: cover;
+}
 .node--view-mode-full h2{
   position: absolute;
   top: 200px;
@@ -32,7 +42,8 @@ h2 .field--name-title{
 }
 
 .node--type-article.node--view-mode-teaser img{
-  transform: scale(2.5) translateX(23%) translateY(27%);
+/*  transform: scale(2.5) translateX(23%) translateY(27%);
   overflow: hidden;
+*/
 }
 

@@ -1,6 +1,4 @@
-image_fields:
-  node--article--field_image--default: '1'
-  node--article--field_image--teaser: '1'
+image_fields: {  }
 alter_tag:
   img: img
   iframe: '0'
