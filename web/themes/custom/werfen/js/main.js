@@ -7,6 +7,28 @@
           //initialize swiper when document ready
 
             let id;
+
+            let swiperC;
+            var settingC = {
+                wrapperClass: 'swiper-wrapper-c',
+                slideClass: 'swiper-slide-c',
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                nested: true,
+                freeMode: true,
+                mousewheel: true,
+                autoHeight: true,
+                draggable: true,
+                scrollbar: {
+                  el: '.swiper-scrollbar',
+                },
+                keyboard: {
+                  enabled: false,
+                },
+            };
+
+            swiperC = new Swiper('.swiper-container-c2', settingC);
+
             let swiperV;
             var settingsV = {
 
@@ -41,7 +63,7 @@
                    $(swiperH).each(function(obj) {
                       swiperH[obj].allowSlideNext = false;
                       swiperH[obj].allowSlidePrev = false;
-                     console.log(swiperH[obj]);
+
                    });
 
                },
@@ -51,7 +73,7 @@
                    $(swiperH).each(function(obj) {
                       swiperH[obj].allowSlideNext = true;
                       swiperH[obj].allowSlidePrev = true;
-                     console.log(swiperH[obj]);
+
                    });
 
                }
@@ -64,11 +86,14 @@
 
             allowSlideNext: false,
             allowSlidePrev: false,
+            draggable: false,
+            dragSize: 100,
+            slidesPerView: 1,
             wrapperClass: 'swiper-wrapper-h',
             slideClass: 'swiper-slide-h',
-            pagination: {
-              el: '.swiper-pagination-h',
-              clickable: true,
+            scrollbar: {
+              el: '.swiper-scrollbar',
+
             },
 
             keyboard: {
@@ -78,8 +103,9 @@
                reachEnd: function(){
                    swiperV.allowSlideNext = false;
                    swiperV.allowSlidePrev = false;
+
                     $( ".swiper-pagination-v" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
-                    $( ".swiper-pagination-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
+                    $( ".swiper-scrollbar-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
                     $( ".backbtntop" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight d-none');
                },
                reachBeginning: function(){
@@ -87,7 +113,7 @@
                    swiperV.allowSlideNext = true;
                    swiperV.allowSlidePrev = true;
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
-                    $( ".swiper-pagination-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
+                    $( ".swiper-scrollbar-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
                     $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
                }
             }
@@ -100,6 +126,7 @@
             swiperH[id].slidePrev();
           });
 
+<<<<<<< HEAD
           //Graficos
           window.onload = function () {
             CanvasJS.addColorSet("greenShades",
@@ -365,6 +392,8 @@
           chart4.render();
           torta.render();
           }
+=======
+>>>>>>> c343529f8ee57e16d320692c7baf1e888c265bec
 
    }
   };
