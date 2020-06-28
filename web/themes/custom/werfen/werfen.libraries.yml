@@ -7,6 +7,7 @@ global-styling:
 global-scripts:
   js:
     https://unpkg.com/swiper/js/swiper.min.js: { type: external }
+    https://canvasjs.com/assets/script/canvasjs.min.js: { type: external }
     js/main.js: {}
   dependencies:
     - core/jquery
