@@ -1,0 +1,29 @@
+.node--type-article.node--view-mode-full .node__content .field--name-body
+{
+	max-width: 800px;
+	margin: auto;
+}
+.node--type-article.node--view-mode-full .node__content .field--name-field-image-2{
+	margin-bottom: 100px;
+}
+.firma{
+	width: 250px;
+    height: 100px;
+    background-image: url('../img/firma.png');
+}
+.copete-financial h3{
+	color: #00A3E0;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.color1{
+	color: #c5d7db;
+}
+.color2{
+	color: #00a3e0;
+}
+.cabecera-table{
+	font-size: 10px;
+    color: #757679;
+}

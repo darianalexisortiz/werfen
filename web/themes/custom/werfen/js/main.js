@@ -125,19 +125,17 @@
             e.preventDefault();
             swiperH[id].slidePrev();
           });
-
-<<<<<<< HEAD
           //Graficos
           window.onload = function () {
             CanvasJS.addColorSet("greenShades",
                     [
-                    "#5a9bd6",
-                    "#daa826"               
+                    "#C5D7DB",
+                    "#00A3E0"               
                     ]);
             CanvasJS.addColorSet("torta",
                     [
-                    "#d37238",
-                    "#daa826"               
+                    "#C5D7DB",
+                    "#00A3E0"               
                     ]);
           var chart = new CanvasJS.Chart("chart1", {
             animationEnabled: true,
@@ -149,7 +147,8 @@
             },
             subtitles: [{
               text: " Net Profit",
-              fontSize: 23
+              fontSize: 23,
+              fontColor:"#28373C"
             }], 
             axisX: {
               title: "  ",
@@ -161,11 +160,11 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#f1f2f3", 
-              titleFontColor: "#f1f2f3",
-              lineColor: "#f1f2f3",
-              labelFontColor: "#f1f2f3",
-              tickColor: "#f1f2f3"
+              gridColor: "#ffffff", 
+              titleFontColor: "#ffffff",
+              lineColor: "#ffffff",
+              labelFontColor: "#ffffff",
+              tickColor: "#ffffff"
             },
             axisY2: {
               gridColor: "#000", 
@@ -182,7 +181,7 @@
               cursor: "pointer",
               itemclick: toggleDataSeries
             },
-            backgroundColor: "#f1f2f3",
+            backgroundColor: "#ffffff",
             data: [{
               type: "column",
               showInLegend: false,      
@@ -205,7 +204,8 @@
             },
             subtitles: [{
               text: "Net Worth",
-              fontSize: 23
+              fontSize: 23,
+              fontColor:"#28373C"
             }], 
             axisX: {
               title: "  ",
@@ -217,11 +217,11 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#f1f2f3", 
-              titleFontColor: "#f1f2f3",
-              lineColor: "#f1f2f3",
-              labelFontColor: "#f1f2f3",
-              tickColor: "#f1f2f3"
+              gridColor: "#ffffff", 
+              titleFontColor: "#ffffff",
+              lineColor: "#ffffff",
+              labelFontColor: "#ffffff",
+              tickColor: "#ffffff"
             },
             axisY2: {
               gridColor: "#000", 
@@ -238,7 +238,7 @@
               cursor: "pointer",
               itemclick: toggleDataSeries
             },
-            backgroundColor: "#f1f2f3",
+            backgroundColor: "#ffffff",
             data: [{
               type: "column",
               showInLegend: false,      
@@ -255,14 +255,14 @@
             animationEnabled: true,
             colorSet: "greenShades",
             title:{
-              text: "↑ <br/> EBITA",
+              text: "↑",
               fontSize: 50,
               fontColor: "#3b67ad"
             },
             subtitles: [{
-              text: "(Before Interest, Taxes, Depreciation & Amortization)",
+              text: "EBITA (Before Interest, Taxes, Depreciation & Amortization)",
               fontSize: 16,
-              fontColor: "#969698"
+              fontColor:"#28373C"
             }], 
             axisX: {
               title: "  ",
@@ -274,11 +274,11 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#f1f2f3", 
-              titleFontColor: "#f1f2f3",
-              lineColor: "#f1f2f3",
-              labelFontColor: "#f1f2f3",
-              tickColor: "#f1f2f3"
+              gridColor: "#ffffff", 
+              titleFontColor: "#ffffff",
+              lineColor: "#ffffff",
+              labelFontColor: "#ffffff",
+              tickColor: "#ffffff"
             },
             axisY2: {
               gridColor: "#000", 
@@ -295,7 +295,7 @@
               cursor: "pointer",
               itemclick: toggleDataSeries
             },
-            backgroundColor: "#f1f2f3",
+            backgroundColor: "#ffffff",
             data: [{
               type: "column",
               showInLegend: false,      
@@ -318,7 +318,8 @@
             },
             subtitles: [{
               text: "Investment in R&D",
-              fontSize: 23
+              fontSize: 23,
+              fontColor:"#28373C"
             }], 
             axisX: {
               title: "  ",
@@ -330,11 +331,11 @@
             },
             axisY: {
               gridDashType: "dot",
-              gridColor: "#f1f2f3", 
-              titleFontColor: "#f1f2f3",
-              lineColor: "#f1f2f3",
-              labelFontColor: "#f1f2f3",
-              tickColor: "#f1f2f3"
+              gridColor: "#ffffff", 
+              titleFontColor: "#ffffff",
+              lineColor: "#ffffff",
+              labelFontColor: "#ffffff",
+              tickColor: "#ffffff"
             },
             toolTip: {
               shared: true
@@ -343,7 +344,7 @@
               cursor: "pointer",
               itemclick: toggleDataSeries
             },
-            backgroundColor: "#f1f2f3",
+            backgroundColor: "#ffffff",
             data: [{
               type: "column",
               showInLegend: false,      
@@ -391,9 +392,7 @@
           chart3.render();
           chart4.render();
           torta.render();
-          }
-=======
->>>>>>> c343529f8ee57e16d320692c7baf1e888c265bec
+          };
 
    }
   };
