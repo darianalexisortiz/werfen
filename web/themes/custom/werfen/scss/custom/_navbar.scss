@@ -1,0 +1,57 @@
+// Define new variables.
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-dark .navbar-brand img, .footer-dark .navbar-brand img {
+    filter: invert(0);
+}
+.node--view-mode-teaser h2{
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+}
+.node--view-mode-teaser .field--name-field-image img, .node--view-mode-teaser .field--name-field-image-2 img{
+  height: 100vh;
+  width:100vw;
+  object-fit: cover;
+}
+.node--view-mode-full .field--name-field-image img, .node--view-mode-full .field--name-field-image-2 img{
+  height: auto;
+  width:100vw;
+  object-fit: cover;
+}
+
+.node--type-page .field--name-field-image-2 img{
+  height: 100vh;
+  width:100vw;
+  object-fit: cover;
+}
+
+
+.node--view-mode-full h2{
+  position: absolute;
+  top: 200px;
+}
+
+h2 .field--name-title{
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.region-content {
+    padding: 0;
+}
+
+.js .lazyloaded {
+    transition: opacity 500ms;
+}
+
+.node--type-article.node--view-mode-teaser img{
+/*  transform: scale(2.5) translateX(23%) translateY(27%);
+  overflow: hidden;
+*/
+}
+

@@ -6,13 +6,13 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.field_image
+    - field.field.node.article.field_image_2
     - field.field.node.article.field_weight
     - node.type.article
     - responsive_image.styles.wide
   module:
     - field_formatter_class
     - lazy
-    - responsive_image
     - user
 _core:
   default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
@@ -22,20 +22,19 @@ bundle: article
 mode: teaser
 content:
   field_image:
-    type: responsive_image
+    type: lazy_responsive_image
     weight: 0
     region: content
+    label: hidden
     settings:
       responsive_image_style: wide
       image_link: ''
     third_party_settings:
       field_formatter_class:
         class: ''
-      lazy:
-        lazy_image: '1'
-    label: hidden
 hidden:
   body: true
+  field_image_2: true
   field_weight: true
   langcode: true
   links: true

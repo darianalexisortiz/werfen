@@ -7,6 +7,8 @@ dependencies:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
     - node.type.article
+  content:
+    - 'node:page:96deb21e-1564-4721-a431-eba51572fe70'
   module:
     - node
     - user
@@ -151,26 +153,9 @@ display:
           entity_field: type
           plugin_id: bundle
       pager:
-        type: full
+        type: none
         options:
-          items_per_page: 10
           offset: 0
-          id: 0
-          total_pages: 0
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
-          tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
-          quantity: 9
       query:
         type: views_query
         options:
@@ -263,16 +248,16 @@ display:
     cache_metadata:
       contexts:
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
       tags:
-        - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.article.default'
         - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.full'
+        - 'config:core.entity_view_display.node.page.teaser'
+        - 'config:core.entity_view_display.node.article.rss'
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -315,6 +300,7 @@ display:
         - 'config:core.entity_view_display.node.article.rss'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.full'
         - 'config:core.entity_view_display.node.page.teaser'
   page_1:
     display_options:
@@ -444,33 +430,33 @@ display:
           plugin_id: standard
       css_class: ''
       header:
-        area:
-          id: area
+        entity_node:
+          id: entity_node
           table: views
-          field: area
+          field: entity_node
           relationship: none
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: false
-          content:
-            value: Cabecera
-            format: basic_html
-          plugin_id: text
+          tokenize: true
+          target: 96deb21e-1564-4721-a431-eba51572fe70
+          view_mode: teaser
+          bypass_access: false
+          plugin_id: entity
       footer:
-        area:
-          id: area
+        entity_node:
+          id: entity_node
           table: views
-          field: area
+          field: entity_node
           relationship: none
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: false
-          content:
-            value: "Pie de página\r\n"
-            format: basic_html
-          plugin_id: text
+          tokenize: true
+          target: 96deb21e-1564-4721-a431-eba51572fe70
+          view_mode: full
+          bypass_access: false
+          plugin_id: entity
     display_plugin: page
     display_title: Page
     id: page_1
@@ -478,7 +464,6 @@ display:
     cache_metadata:
       contexts:
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       max-age: -1
@@ -487,4 +472,5 @@ display:
         - 'config:core.entity_view_display.node.article.rss'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.full'
         - 'config:core.entity_view_display.node.page.teaser'

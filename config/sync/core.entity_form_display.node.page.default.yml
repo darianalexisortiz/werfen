@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.page.field_attached_file
     - field.field.node.page.field_image
+    - field.field.node.page.field_image_2
     - image.style.thumbnail
     - node.type.page
   module:
@@ -18,7 +19,7 @@ bundle: page
 mode: default
 content:
   field_attached_file:
-    weight: 2
+    weight: 3
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -26,6 +27,14 @@ content:
     region: content
   field_image:
     weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_image_2:
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
