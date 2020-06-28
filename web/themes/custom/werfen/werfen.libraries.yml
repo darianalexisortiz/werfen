@@ -4,11 +4,13 @@ global-styling:
       https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css: { type: external, minified: true }
       https://unpkg.com/swiper/css/swiper.min.css: { type: external, minified: true }
       css/style.css: {}
+      css/node-article.css: {}
       css/swiper.css: {}
 global-scripts:
   js:
     https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js: { type: external, minified: true }
     https://unpkg.com/swiper/js/swiper.min.js: { type: external }
+    https://canvasjs.com/assets/script/canvasjs.min.js: { type: external }
     js/main.js: {}
   dependencies:
     - core/jquery
