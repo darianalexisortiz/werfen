@@ -1,6 +1,7 @@
 global-styling:
   css:
     theme:
+      https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css: { type: external, minified: true }
       https://unpkg.com/swiper/css/swiper.min.css: { type: external, minified: true }
       scss/style.scss: {}
 global-scripts:

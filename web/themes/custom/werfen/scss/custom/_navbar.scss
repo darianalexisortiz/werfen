@@ -1,0 +1,32 @@
+// Define new variables.
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-dark .navbar-brand img, .footer-dark .navbar-brand img {
+    filter: invert(0);
+}
+h2 .field--name-title{
+  position: absolute;
+  color: #fff;
+  top: 50%;
+
+}
+
+.region-content {
+    padding: 0;
+}
+
+.js .lazyloaded {
+    transition: opacity 500ms;
+}
+
+.node--type-article.node--view-mode-teaser img{
+  transform: scale(2.5) translateX(23%) translateY(27%);
+  overflow: hidden;
+}
+.swiper-slide-h{
+  overflow: hidden;
+}

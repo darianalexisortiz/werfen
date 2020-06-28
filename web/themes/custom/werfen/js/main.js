@@ -3,9 +3,9 @@
     attach: function (context, settings) {
     //initialize swiper when document ready
 
-      $(document).ready(function () {
+
           //initialize swiper when document ready
-          let id;
+
           let swiperS;
           var settingS = {
               wrapperClass: 'swiper-wrapper-c',
@@ -25,13 +25,14 @@
 
           swiperS = new Swiper('.swiper-container-c', settingS);
 
+            let id;
             let swiperV;
             var settingsV = {
+
             direction: 'vertical',
             mousewheel: true,
             wrapperClass: 'swiper-wrapper-v',
             slideClass: 'swiper-slide-v',
-            lazy: true,
             pagination: {
               el: '.swiper-pagination-v',
               clickable: true,
@@ -45,7 +46,6 @@
             hashNavigation: true,
             on: {
                slideChange: function(){
-               console.log(this.activeIndex - 1);
                id = this.activeIndex - 1;
                }
             }
@@ -54,6 +54,7 @@
           let a;
           let swiperH;
           settingsH = {
+            centeredSlides: true,
             wrapperClass: 'swiper-wrapper-h',
             slideClass: 'swiper-slide-h',
             pagination: {
@@ -68,28 +69,34 @@
                reachEnd: function(){
                    swiperV.allowSlideNext = false;
                    swiperV.allowSlidePrev = false;
-                    $( ".swiper-pagination-v" ).animate({ opacity: 0, right: "-2", }, 500 );
-                    $( ".swiper-pagination-h" ).animate({ opacity: 0, bottom: "-2", }, 500 );
-                /*   swiperS.forEach(function(obj) {
+                    $( ".swiper-pagination-v" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
+                    $( ".swiper-pagination-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
+                    $( ".backbtntop" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight d-none');
+
+                   swiperS.forEach(function(obj) {
                     obj.keyboard.enable();
-                   });*/
+                   });
                },
                reachBeginning: function(){
 
                    swiperV.allowSlideNext = true;
                    swiperV.allowSlidePrev = true;
-                   $( ".swiper-pagination-v" ).animate({ opacity: 1, right:10, }, 500 );
-                   $( ".swiper-pagination-h" ).animate({ opacity: 1, bottom:10, }, 500 );
-                  /* swiperS.forEach(function(obj) {
+                    $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
+                    $( ".swiper-pagination-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
+                    $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
+                   swiperS.forEach(function(obj) {
                     obj.keyboard.disable();
-                   });*/
+                   });
                }
             }
 
           };
           swiperH = new Swiper('.swiper-container-h', settingsH);
 
-        });
+          document.querySelector('.backbtn').addEventListener('click', function (e) {
+            e.preventDefault();
+            swiperH[id].slidePrev();
+          });
 
    }
   };

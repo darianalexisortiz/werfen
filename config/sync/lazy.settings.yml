@@ -29,7 +29,7 @@ lazysizes:
   loadMode: 2
   loadHidden: true
   ricTimeout: 0
-  throttleDelay: 125
+  throttleDelay: 66
   plugins: {  }
 _core:
   default_config_hash: xyl-p4A82Xm3kNZhEa_8OQtiLdONJ6f1ulqtRZZlEMM

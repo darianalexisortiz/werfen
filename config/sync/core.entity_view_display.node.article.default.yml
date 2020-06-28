@@ -11,7 +11,6 @@ dependencies:
   module:
     - field_formatter_class
     - lazy
-    - responsive_image
     - text
     - user
 _core:
@@ -29,7 +28,7 @@ content:
     third_party_settings: {  }
     label: hidden
   field_image:
-    type: responsive_image
+    type: lazy_responsive_image
     weight: 0
     region: content
     settings:
@@ -38,8 +37,6 @@ content:
     third_party_settings:
       field_formatter_class:
         class: ''
-      lazy:
-        lazy_image: '1'
     label: hidden
 hidden:
   field_weight: true

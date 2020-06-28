@@ -7,6 +7,8 @@ dependencies:
     - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
     - node.type.article
+  content:
+    - 'node:page:96deb21e-1564-4721-a431-eba51572fe70'
   module:
     - node
     - user
@@ -269,10 +271,11 @@ display:
       max-age: -1
       tags:
         - 'config:core.entity_view_display.node.article.rss'
-        - 'config:core.entity_view_display.node.page.default'
-        - 'config:core.entity_view_display.node.page.teaser'
         - 'config:core.entity_view_display.node.article.default'
         - 'config:core.entity_view_display.node.article.teaser'
+        - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.full'
+        - 'config:core.entity_view_display.node.page.teaser'
   feed_1:
     display_plugin: feed
     id: feed_1
@@ -315,6 +318,7 @@ display:
         - 'config:core.entity_view_display.node.article.rss'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.full'
         - 'config:core.entity_view_display.node.page.teaser'
   page_1:
     display_options:
@@ -444,33 +448,33 @@ display:
           plugin_id: standard
       css_class: ''
       header:
-        area:
-          id: area
+        entity_node:
+          id: entity_node
           table: views
-          field: area
+          field: entity_node
           relationship: none
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: false
-          content:
-            value: Cabecera
-            format: basic_html
-          plugin_id: text
+          tokenize: true
+          target: 96deb21e-1564-4721-a431-eba51572fe70
+          view_mode: teaser
+          bypass_access: false
+          plugin_id: entity
       footer:
-        area:
-          id: area
+        entity_node:
+          id: entity_node
           table: views
-          field: area
+          field: entity_node
           relationship: none
           group_type: group
           admin_label: ''
           empty: true
-          tokenize: false
-          content:
-            value: "Pie de página\r\n"
-            format: basic_html
-          plugin_id: text
+          tokenize: true
+          target: 96deb21e-1564-4721-a431-eba51572fe70
+          view_mode: full
+          bypass_access: false
+          plugin_id: entity
     display_plugin: page
     display_title: Page
     id: page_1
@@ -487,4 +491,5 @@ display:
         - 'config:core.entity_view_display.node.article.rss'
         - 'config:core.entity_view_display.node.article.teaser'
         - 'config:core.entity_view_display.node.page.default'
+        - 'config:core.entity_view_display.node.page.full'
         - 'config:core.entity_view_display.node.page.teaser'
