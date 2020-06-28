@@ -12,7 +12,6 @@
               slideClass: 'swiper-slide-c',
               direction: 'vertical',
               slidesPerView: 'auto',
-              nested: true,
               freeMode: true,
               mousewheel: true,
               scrollbar: {
@@ -72,9 +71,8 @@
                     $( ".swiper-pagination-v" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
                     $( ".swiper-pagination-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
                     $( ".backbtntop" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight d-none');
-
-                   swiperS.forEach(function(obj) {
-                    obj.keyboard.enable();
+                   $(swiperS).each(function(obj) {
+                     swiperS[obj].keyboard.enable();
                    });
                },
                reachBeginning: function(){
@@ -84,8 +82,8 @@
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
                     $( ".swiper-pagination-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
                     $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
-                   swiperS.forEach(function(obj) {
-                    obj.keyboard.disable();
+                    $(swiperS).each(function(obj) {
+                      swiperS[obj].keyboard.disable();
                    });
                }
             }
