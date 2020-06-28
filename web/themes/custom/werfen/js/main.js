@@ -24,25 +24,53 @@
             keyboard: {
               enabled: true,
             },
-            hashNavigation: true,
+
             on: {
                slideChange: function(){
                id = this.activeIndex - 1;
+               },
+               reachEnd: function(){
+                   $(swiperH).each(function(obj) {
+                      swiperH[obj].allowSlideNext = false;
+                      swiperH[obj].allowSlidePrev = false;
+                   });
+               },
+               reachBeginning: function(){
+
+
+                   $(swiperH).each(function(obj) {
+                      swiperH[obj].allowSlideNext = false;
+                      swiperH[obj].allowSlidePrev = false;
+                     console.log(swiperH[obj]);
+                   });
+
+               },
+               fromEdge: function(){
+
+
+                   $(swiperH).each(function(obj) {
+                      swiperH[obj].allowSlideNext = true;
+                      swiperH[obj].allowSlidePrev = true;
+                     console.log(swiperH[obj]);
+                   });
+
                }
             }
           }
           swiperV = new Swiper('.swiper-container-v', settingsV);
-          let a;
+
           let swiperH;
           settingsH = {
-            centeredSlides: true,
+
+            allowSlideNext: false,
+            allowSlidePrev: false,
             wrapperClass: 'swiper-wrapper-h',
             slideClass: 'swiper-slide-h',
             pagination: {
               el: '.swiper-pagination-h',
               clickable: true,
             },
-            hashNavigation: true,
+
             keyboard: {
               enabled: true,
             },
