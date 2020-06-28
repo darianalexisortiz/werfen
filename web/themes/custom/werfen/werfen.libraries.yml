@@ -3,7 +3,7 @@ global-styling:
     theme:
       https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css: { type: external, minified: true }
       https://unpkg.com/swiper/css/swiper.min.css: { type: external, minified: true }
-      scss/style.scss: {}
+      css/style.css: {}
 global-scripts:
   js:
     https://unpkg.com/swiper/js/swiper.min.js: { type: external }
