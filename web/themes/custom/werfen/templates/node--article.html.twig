@@ -108,7 +108,9 @@
     </article>
     {% else %}
 
-
+    <div class="swiper-container-c">
+      <div class="swiper-wrapper-c">
+        <div class="swiper-slide-c">
           <article{{ attributes.addClass(classes) }}>
             {{ title_prefix }}
             {% if label and not page %}
@@ -131,6 +133,10 @@
                  {{ content }}
                </div>
           </article>
-
+        </div>
+      </div>
+      <!-- Add Scroll Bar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
 
   {% endif %}
