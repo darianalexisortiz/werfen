@@ -15,7 +15,7 @@
               el: '.swiper-pagination-v',
               clickable: true,
               renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + '</span>';
+                return '<span class="' + className + '">0' + (index + 1) + '</span>';
               },
             },
             keyboard: {
@@ -62,16 +62,9 @@
             direction: 'horizontal',
             allowSlideNext: false,
             allowSlidePrev: false,
-            draggable: false,
-            dragSize: 100,
             slidesPerView: 1,
             wrapperClass: 'swiper-wrapper-h',
             slideClass: 'swiper-slide-h',
-            scrollbar: {
-              el: '.swiper-scrollbar',
-
-            },
-
             keyboard: {
               enabled: true,
             },
@@ -106,7 +99,7 @@
             swiperH[id].slidePrev();
           });
 
-          var sizeSwitch = 135;
+          var sizeSwitch = 290;
           var switchHandle = $('.switch .handle');
           var switchArea =  $('.switch');
 
