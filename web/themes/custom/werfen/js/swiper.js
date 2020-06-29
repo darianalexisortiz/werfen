@@ -2,8 +2,7 @@
   Drupal.behaviors.swipercustom = {
     attach: function (context, settings) {
 
-
-         /*   let swiperC;
+   /*         let swiperC;
             var settingC = {
                 wrapperClass: 'swiper-wrapper-c',
                 slideClass: 'swiper-slide-c',
@@ -14,6 +13,7 @@
                 mousewheel: true,
                 autoHeight: true,
                 draggable: true,
+                freeModeSticky: true,
                 scrollbar: {
                   el: '.swiper-scrollbar',
                 },
@@ -22,7 +22,7 @@
                 },
             };
 
-            swiperC = new Swiper('.swiper-container-c2', settingC);
+            swiperC = new Swiper('.swiper-container-c', settingC);
 */
 
             let id;
@@ -80,7 +80,7 @@
 
           let swiperH;
           settingsH = {
-
+            direction: 'horizontal',
             allowSlideNext: false,
             allowSlidePrev: false,
             draggable: false,
@@ -112,6 +112,10 @@
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
                     $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
+                    conditionMoveSnap2()
+               },
+               sliderMove: function(){
+                console.log(swiperH[id].getTranslate());
                }
             }
 
@@ -122,6 +126,63 @@
             e.preventDefault();
             swiperH[id].slidePrev();
           });
+         /* settingsb = {
+            direction: 'horizontal',
+            wrapperClass: 'swiper-wrapperb',
+          slideClass: 'swiper-slideb',
+          }
+          var swiper1 = new Swiper('.swiper-containerb', settingsb);
+*/
+var sizeSwitch = 135;
+var switchHandle = $('.switch .handle');
+var switchArea =  $('.switch');
+
+switchHandle.draggable({
+  axis: 'x',
+  containment: 'parent',
+  stop: function() {
+    conditionMove();
+  }
+});
+
+switchArea.click(function() {
+  conditionMoveSnap();
+});
+
+
+function conditionMove() {
+  if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
+    switchHandle.animate({
+      left: 0
+    }, 200);
+  }
+  else {
+    switchHandle.animate({
+      left: sizeSwitch + 'px'
+    }, 200);
+  }
+}
+
+function conditionMoveSnap() {
+  if(parseInt(switchHandle.css('left')) == sizeSwitch) {
+    switchHandle.animate({
+      left: 0
+    }, 200);
+  }
+  else {
+    switchHandle.animate({
+      left: sizeSwitch + 'px'
+    }, 200, function() {
+    swiperH[id].slideNext();
+    });
+  }
+}
+
+function conditionMoveSnap2() {
+    switchHandle.animate({
+      left: 0
+    }, 200);
+}
 
    }
   };

@@ -8,3 +8,47 @@ nav.navbar{
 .swiper-slide-h {
     overflow-x: hidden;
 }
+
+body {
+  background: #24282E;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.swiper-container-1{
+  position: absolute;
+  z-index: 99999;
+  top: 200px;
+}
+
+.thething {
+
+  margin: 50px auto;
+  width: 200px;
+  height: 80px;
+  position: absolute;
+  z-index: 99999;
+  bottom: 0;
+  left: 40%;
+}
+
+.switch {
+  background: #444A53;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  float: left;
+  width: 200px;
+  padding: 8px;
+  -moz-border-radius: 56px;
+  -webkit-border-radius: 56px;
+  border-radius: 56px;
+}
+.switch .handle {
+  display: block;
+  background: #A8B1BB;
+  height: 50px;
+  width: 50px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
