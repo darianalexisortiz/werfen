@@ -78,12 +78,12 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+    'swiper-no-swiping',
   ]
 %}
 {{ attach_library('classy/node') }}
   {% if view_mode == 'teaser' %}
     <article{{ attributes.addClass(classes) }}>
-
 
       {{ title_prefix }}
       {% if label and not page %}
@@ -106,10 +106,55 @@
         {{ content }}
       </div>
 
-      <div class="thething">
+      <div class="thething swiper-no-swiping">
         <div class="switch">
           <span class="handle"></span>
+          <span class="handletext">Clic here to discover</span>
         </div>
+      <div class="hand">
+        <svg width="37.003" height="53.611" data-name="Componente 3 – 13" version="1.1" viewBox="0 0 37.003 53.611" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-102 -1461)" data-name="Grupo 269">
+  <path transform="translate(-854.48 1652)" d="m993.48-160.35a3.868 3.868 0 0 0-3.868-3.868 3.868 3.868 0 0 0-3.868 3.868v-2.635a3.868 3.868 0 0 0-3.868-3.868 3.868 3.868 0 0 0-3.868 3.868v-2.747a3.868 3.868 0 0 0-3.868-3.868 3.867 3.867 0 0 0-3.4 2.02c-0.155-0.093-0.312-0.174-0.469-0.248v-12.03a3.868 3.868 0 0 0-3.868-3.868 3.868 3.868 0 0 0-3.868 3.868v16.48a3.871 3.871 0 0 0 0.092 0.832 8.714 8.714 0 0 0-0.092 1.251s-5.045 3.971-5.718 4.811-0.168 8.24 0 10.763c0.129 1.935 5.7 5.577 8.291 7.168a4.986 4.986 0 0 0 3.145 1.152h19.507c3.158 0 5.718-3.126 5.718-6.983v-2.8c0-0.179-7e-3 -0.356-0.018-0.532 0.011-0.119 0.018-0.239 0.018-0.361z" fill="#fff" data-name="Trazado 130"/>
+  <g transform="translate(102,1461)" fill="none" stroke="#fff" stroke-width="2" data-name="Elipse 17">
+   <circle cx="10" cy="10" r="10" stroke="none"/>
+   <circle cx="10" cy="10" r="9" fill="none"/>
+  </g>
+ </g>
+</svg>
+</div>
+      </div>
+
+
+
+      <div class="scroll-h">
+
+      <svg id="Componente_5_2" data-name="Componente 5 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="82.973" viewBox="0 0 30 82.973">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_129" data-name="Trazado 129" d="M0-4H15v-6.973H0Z" transform="translate(0 10.969)" fill="none" stroke="#ebf5f7" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(0 18.034)" fill="none" stroke="#ebf5f7" stroke-width="1">
+    <rect width="30" height="47" rx="15" stroke="none"/>
+    <rect x="0.5" y="0.5" width="29" height="46" rx="14.5" fill="none"/>
+  </g>
+  <rect id="Rectángulo_5" data-name="Rectángulo 5" width="3" height="8" rx="1.5" transform="translate(14 26.034)" fill="#ebf5f7"/>
+  <g id="Grupo_266" data-name="Grupo 266" transform="translate(23 -3.996) rotate(180)">
+    <g id="Grupo_264" data-name="Grupo 264" transform="translate(0 -10.969)" clip-path="url(#clip-path)">
+      <g id="Grupo_263" data-name="Grupo 263" transform="translate(0.636 0.635)">
+        <path id="Trazado_128" data-name="Trazado 128" d="M-7.868,0l-6.864,5.7L-21.6,0" transform="translate(21.597)" fill="none" stroke="#ebf5f7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+  <g id="Grupo_267" data-name="Grupo 267" transform="translate(8 86.969)">
+    <g id="Grupo_264-2" data-name="Grupo 264" transform="translate(0 -10.969)" clip-path="url(#clip-path)">
+      <g id="Grupo_263-2" data-name="Grupo 263" transform="translate(0.636 0.635)">
+        <path id="Trazado_128-2" data-name="Trazado 128" d="M-7.868,0l-6.864,5.7L-21.6,0" transform="translate(21.597)" fill="none" stroke="#ebf5f7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
+
       </div>
 
     </article>
@@ -119,6 +164,7 @@
       <div class="swiper-wrapper-c">
         <div class="swiper-slide-c">
           <article{{ attributes.addClass(classes) }}>
+
             {{ title_prefix }}
             {% if label and not page %}
               <h2{{ title_attributes }}>
@@ -176,8 +222,6 @@
           </article>
         </div>
       </div>
-      <!-- Add Scroll Bar -->
-      <div class="swiper-scrollbar"></div>
     </div>
 
   {% endif %}
