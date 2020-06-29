@@ -104,6 +104,7 @@
                     $( ".swiper-pagination-v" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
                     $( ".backbtntop" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight d-none');
+                    this.allowTouchMove = false;
                },
                reachBeginning: function(){
 
@@ -112,10 +113,7 @@
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
                     $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
-                    conditionMoveSnap2()
-               },
-               sliderMove: function(){
-                console.log(swiperH[id].getTranslate());
+                    conditionMoveSnap2();
                }
             }
 
