@@ -91,6 +91,7 @@
                }
             }
 
+
           };
           swiperH = new Swiper('.swiper-container-h', settingsH);
 
@@ -121,11 +122,13 @@
               switchHandle.animate({
                 left: 0
               }, 200);
+              $( ".handletext" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
             }
             else {
               switchHandle.animate({
                 left: sizeSwitch + 'px'
               }, 200);
+                $( ".handletext" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
 
                swiperH[id].slideNext();
             }
@@ -136,12 +139,14 @@
             switchHandle.animate({
               left: 0
             }, 200);
+          $( ".handletext" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
           }
           else {
             switchHandle.animate({
               left: sizeSwitch + 'px'
             }, 200, function() {
             swiperH[id].slideNext();
+            $( ".handletext" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
             });
   }
 }
@@ -150,6 +155,7 @@ function conditionMoveSnap2() {
     switchHandle.animate({
       left: 0
     }, 200);
+                  $( ".handletext" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
 }
 
    }
