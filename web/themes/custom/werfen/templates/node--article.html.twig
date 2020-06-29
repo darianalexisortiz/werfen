@@ -108,10 +108,8 @@
 
       <div class="thething swiper-no-swiping">
         <div class="switch">
-          <span class="handle"></span>
-          <span class="handletext">Clic here to discover</span>
-        </div>
-      <div class="hand">
+          <span class="handle">
+          <div class="hand">
         <svg width="37.003" height="53.611" data-name="Componente 3 – 13" version="1.1" viewBox="0 0 37.003 53.611" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-102 -1461)" data-name="Grupo 269">
   <path transform="translate(-854.48 1652)" d="m993.48-160.35a3.868 3.868 0 0 0-3.868-3.868 3.868 3.868 0 0 0-3.868 3.868v-2.635a3.868 3.868 0 0 0-3.868-3.868 3.868 3.868 0 0 0-3.868 3.868v-2.747a3.868 3.868 0 0 0-3.868-3.868 3.867 3.867 0 0 0-3.4 2.02c-0.155-0.093-0.312-0.174-0.469-0.248v-12.03a3.868 3.868 0 0 0-3.868-3.868 3.868 3.868 0 0 0-3.868 3.868v16.48a3.871 3.871 0 0 0 0.092 0.832 8.714 8.714 0 0 0-0.092 1.251s-5.045 3.971-5.718 4.811-0.168 8.24 0 10.763c0.129 1.935 5.7 5.577 8.291 7.168a4.986 4.986 0 0 0 3.145 1.152h19.507c3.158 0 5.718-3.126 5.718-6.983v-2.8c0-0.179-7e-3 -0.356-0.018-0.532 0.011-0.119 0.018-0.239 0.018-0.361z" fill="#fff" data-name="Trazado 130"/>
@@ -122,6 +120,10 @@
  </g>
 </svg>
 </div>
+          </span>
+          <span class="handletext animate__animated">Clic here to discover</span>
+        </div>
+
       </div>
 
 
@@ -160,9 +162,6 @@
     </article>
     {% else %}
 
-    <div class="swiper-container-c">
-      <div class="swiper-wrapper-c">
-        <div class="swiper-slide-c">
           <article{{ attributes.addClass(classes) }}>
 
             {{ title_prefix }}
@@ -220,8 +219,5 @@
                 Back
                 </div>
           </article>
-        </div>
-      </div>
-    </div>
 
   {% endif %}
