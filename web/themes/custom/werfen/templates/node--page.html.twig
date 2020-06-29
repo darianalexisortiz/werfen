@@ -84,7 +84,6 @@
   {% if view_mode == 'teaser' %}
     <article{{ attributes.addClass(classes) }}>
 
-
       {{ title_prefix }}
       {% if label and not page %}
         <h2{{ title_attributes }}>
@@ -93,42 +92,106 @@
       {% endif %}
       {{ title_suffix }}
 
-      {% if display_submitted %}
-        <footer class="node__meta">
-          {{ author_picture }}
-          <div{{ author_attributes.addClass('node__submitted') }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-            {{ metadata }}
-          </div>
-        </footer>
-      {% endif %}
+<a href="{{ file_url(node.field_attached_file.entity.fileuri) }}" class="btn-pdf-download">
+PDF Version
+
+<svg width="22px" height="25px" version="1.1" viewBox="0 0 12.32 13.617" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-91.358 -73.323)">
+  <g transform="matrix(.35278 0 0 -.35278 -374.69 96.245)">
+   <g transform="translate(1338.5 64.977)">
+    <path d="m0 0v-31.247" fill="none" stroke="#089eda" stroke-miterlimit="10" stroke-width="1.838"/>
+   </g>
+   <g transform="translate(1328.4 43.839)">
+    <path d="M 0,0 10.109,-10.109 20.219,0" fill="none" stroke="#089eda" stroke-miterlimit="10" stroke-width="1.838"/>
+   </g>
+   <g transform="translate(1322 38.325)">
+    <path d="m0 0v-11.028h33.085v11.028" fill="none" stroke="#089eda" stroke-miterlimit="10" stroke-width="1.838"/>
+   </g>
+  </g>
+ </g>
+</svg>
+</a>
+
       <div{{ content_attributes.addClass('node__content') }}>
         {{ content }}
       </div>
     </article>
     {% else %}
     <article{{ attributes.addClass(classes) }}>
-      {{ title_prefix }}
-      {% if label and not page %}
-        <h2{{ title_attributes }}>
-          {{ label }}
-        </h2>
-      {% endif %}
-      {{ title_suffix }}
-
-      {% if display_submitted %}
-        <footer class="node__meta">
-          {{ author_picture }}
-          <div{{ author_attributes.addClass('node__submitted') }}>
-            {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-            {{ metadata }}
-          </div>
-        </footer>
-      {% endif %}
 
              <div{{ content_attributes.addClass('node__content') }}>
                {{ content }}
+<div class="footer-page">
+<a href="{{ file_url(node.field_attached_file.entity.fileuri) }}" class="btn-pdf-download">
+PDF Version
+
+<svg width="22px" height="25px" version="1.1" viewBox="0 0 12.32 13.617" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-91.358 -73.323)">
+  <g transform="matrix(.35278 0 0 -.35278 -374.69 96.245)">
+   <g transform="translate(1338.5 64.977)">
+    <path d="m0 0v-31.247" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.838"/>
+   </g>
+   <g transform="translate(1328.4 43.839)">
+    <path d="M 0,0 10.109,-10.109 20.219,0" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.838"/>
+   </g>
+   <g transform="translate(1322 38.325)">
+    <path d="m0 0v-11.028h33.085v11.028" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.838"/>
+   </g>
+  </g>
+ </g>
+</svg>
+</a>
+
+<span>Share it</span>
+<a href="#">
+<svg class="social-icons social-in" width="40px" height="40px" version="1.1" viewBox="0 0 5.2917 5.2916" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-160.5 -168.81)">
+  <g transform="matrix(.097307 0 0 -.097307 101.73 207.15)">
+   <g transform="translate(631.09 340.62)">
+    <path d="m0 0h-1e-3c-14.447 0-26.159 11.712-26.159 26.159s11.712 26.159 26.159 26.159h1e-3c14.447 0 26.159-11.712 26.159-26.159s-11.712-26.159-26.159-26.159z" style="fill:none;stroke-miterlimit:10;stroke-width:2.062;stroke:#fff"/>
+   </g>
+   <path d="m619.23 355.12h5.414v17.49h-5.414z" style="fill:#fff"/>
+   <g transform="translate(621.91 374.9)">
+    <path d="m0 0c1.769 0 3.202 1.446 3.202 3.229 0 1.782-1.433 3.226-3.202 3.226s-3.201-1.444-3.201-3.226c0-1.783 1.432-3.229 3.201-3.229" style="fill:#fff"/>
+   </g>
+   <g transform="translate(633.3 364.3)">
+    <path d="m0 0c0 2.458 1.132 3.924 3.299 3.924 1.99 0 2.947-1.406 2.947-3.924v-9.182h5.389v11.075c0 4.684-2.656 6.95-6.364 6.95-3.71 0-5.271-2.89-5.271-2.89v2.356h-5.193v-17.491h5.193z" style="fill:#fff"/>
+   </g>
+  </g>
+ </g>
+</svg>
+</a>
+<a href="#">
+<svg class="social-icons social-tw" width="40px" height="40px" version="1.1" viewBox="0 0 5.2917 5.2917" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-79.846 -119.16)">
+  <g transform="matrix(.097309 0 0 -.097309 14.135 157.49)">
+   <g transform="translate(702.47 340.62)">
+    <path d="m0 0c-14.447 0-26.159 11.712-26.159 26.159s11.712 26.159 26.159 26.159 26.159-11.712 26.159-26.159-11.712-26.159-26.159-26.159z" style="fill:none;stroke-miterlimit:10;stroke-width:2.062;stroke:#fff"/>
+   </g>
+   <g transform="translate(688.53 358.02)">
+    <path d="m0 0c2.53-1.622 5.537-2.569 8.766-2.569 10.619 0 16.617 8.968 16.255 17.012 1.118 0.806 2.087 1.813 2.854 2.961-1.025-0.455-2.128-0.762-3.284-0.9 1.18 0.706 2.087 1.827 2.513 3.164-1.104-0.656-2.329-1.132-3.63-1.389-1.043 1.112-2.53 1.806-4.175 1.806-3.692 0-6.404-3.444-5.57-7.022-4.754 0.238-8.968 2.515-11.789 5.976-1.498-2.571-0.776-5.935 1.771-7.637-0.939 0.031-1.821 0.288-2.592 0.716-0.061-2.65 1.837-5.128 4.587-5.681-0.805-0.218-1.686-0.268-2.581-0.096 0.726-2.274 2.838-3.926 5.342-3.973-2.405-1.885-5.434-2.726-8.467-2.368" style="fill:#fff"/>
+   </g>
+  </g>
+ </g>
+</svg>
+</a>
+<a href="#">
+<svg class="social-icons social-fa" width="40px" height="40px" version="1.1" viewBox="0 0 5.2917 5.2916" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-125.44 -107.3)">
+  <g transform="matrix(.097307 0 0 -.097307 52.783 145.63)">
+   <g transform="translate(773.84 340.62)">
+    <path d="m0 0c-14.448 0-26.16 11.712-26.16 26.159s11.712 26.159 26.16 26.159c14.447 0 26.159-11.712 26.159-26.159s-11.712-26.159-26.159-26.159z" style="fill:none;stroke-miterlimit:10;stroke-width:2.062;stroke:#fff"/>
+   </g>
+   <g transform="translate(769.85 350.97)">
+    <path d="m0 0h6.368v15.946h4.443l0.473 5.34h-4.916v3.041c0 1.259 0.252 1.756 1.47 1.756h3.446v5.542h-4.409c-4.738 0-6.875-2.088-6.875-6.082v-4.257h-3.313v-5.406h3.313z" style="fill:#fff"/>
+   </g>
+  </g>
+ </g>
+</svg>
+</div>
+</a>
              </div>
+
 
 
 
