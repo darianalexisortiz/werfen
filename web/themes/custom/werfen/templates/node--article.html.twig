@@ -163,7 +163,7 @@
     {% else %}
 
           <article{{ attributes.addClass(classes) }}>
-
+            <a id="content-article-{{ node.id }}" class="content-id"></a>
             {{ title_prefix }}
             {% if label and not page %}
               <h2{{ title_attributes }}>
