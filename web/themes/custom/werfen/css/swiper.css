@@ -11,7 +11,7 @@ nav.navbar{
 
 body {
   background: #24282E;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .swiper-container-1{
@@ -61,22 +61,22 @@ left: 14px;
 }
 .switch .handletext{
   color: #fff;
-  font-size: 31px;
+  font-size: 20px;
   position: absolute;
-  top: 10px;
-  right: 44px;
+  top: 16px;
+  right: 70px;
 }
 
 .swiper-pagination-bullet {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     text-align: center;
-    line-height: 40px;
-    font-size: 21px;
+    line-height: 35px;
+    font-size: 18px;
     color: #fff;
     opacity: 1;
     background: none;
-    margin: 30px 18px !important;
+    margin: 50px 20px !important;
 }
 
 .scroll-v-icon{
@@ -96,7 +96,7 @@ left: 14px;
 }
 
 .node--view-mode-teaser .field--name-field-image img, .node--type-page .field--name-field-image img, .node--type-page .field--name-field-image-2 img{
-  filter: brightness(70%) contrast(135%);
+  filter: brightness(65%) contrast(135%);
 }
 
 .footer-page{
@@ -104,18 +104,17 @@ left: 14px;
   top: 50%;
   right: 50%;
   text-align: center;
-        font-size: 26px;
-        color:#fff;
+  font-size: 26px;
+  color:#fff;
 }
 .footer-page span{
-display:block;
+  display:block;
 }
 
 .footer-page a:hover{
-  colo:#fff;
   text-decoration: none;
-    color: #fff;
-      font-size: 26px;
+  color: #fff;
+  font-size: 26px;
 }
 .btn-pdf-download{
   border: 1px solid #fff;
@@ -129,18 +128,15 @@ display:block;
   margin: 20px 0;
 }
 .btn-pdf-download:hover{
-  colo:#fff;
+  color:#fff;
   text-decoration: none;
 }
 .node--view-mode-teaser h2{
 margin: 30px;
-font-weight: bold;
-font-size: 50px;
 }
 
 .node--type-page.node--view-mode-teaser h2 span{
 color: #089eda;
-
 }
 
 .node--type-page.node--view-mode-teaser .btn-pdf-download{
