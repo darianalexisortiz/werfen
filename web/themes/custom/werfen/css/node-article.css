@@ -32,3 +32,18 @@
     display: block;
     font-size: 12px;
 }
+.download
+{
+    background-color: #00A3E0;
+    padding: 25px;
+}
+.back{
+	background-color: #28373C;
+	padding: 25px;
+}
+.download a,.back .backbtn{
+	color:#fff;
+}
+.node--view-mode-full #footer{
+	margin-top: 50px;
+}

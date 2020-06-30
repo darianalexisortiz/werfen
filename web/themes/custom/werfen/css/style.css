@@ -8131,7 +8131,9 @@ a.tabledrag-handle .handle {
 .node--view-mode-teaser h2 {
   position: absolute;
   top: 50%;
-  z-index: 999; }
+  z-index: 999; 
+  left: 50px;
+}
 
 .node--view-mode-teaser .field--name-field-image img, .node--view-mode-teaser .field--name-field-image-2 img {
   height: 100vh;
@@ -8150,11 +8152,15 @@ a.tabledrag-handle .handle {
 
 .node--view-mode-full h2 {
   position: absolute;
-  top: 200px; }
+  top: 375px;
+  left: 20px;
+ }
 
 h2 .field--name-title {
   color: #fff;
-  font-size: 1.5em; }
+  font-size: 3rem;
+  font-weight: bold;
+}
 
 .region-content {
   padding: 0; }
@@ -8183,7 +8189,7 @@ main .container-fluid, main .container-sm, main .container-md, main .container-l
 
 .swiper-wrapper {
   height: 100vh;
-  weight: 100vh; }
+ }
 
 .swiper-pagination-bullet {
   width: 20px;
