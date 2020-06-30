@@ -2,6 +2,11 @@
   Drupal.behaviors.swipercustom = {
     attach: function (context, settings) {
 
+                 var idcontent = [];
+
+                 $('.content-id').each(function(index, obj) {
+                      idcontent.push($(this).attr("id"));
+                 });
 
             let id;
             let swiperV;
@@ -15,6 +20,7 @@
               el: '.swiper-pagination-v',
               clickable: true,
               renderBullet: function (index, className) {
+
                 return '<span class="' + className + '">0' + (index + 1) + '</span>';
               },
             },
@@ -25,16 +31,19 @@
             on: {
                slideChange: function(){
                  id = this.activeIndex -1;
+                   $(swiperH).each(function(obj) {
+                      swiperH[obj].slidePrev();
+                   });
                },
 
                reachEnd: function(){
                    $(swiperH).each(function(obj) {
                       swiperH[obj].allowSlideNext = false;
                       swiperH[obj].allowSlidePrev = false;
+                      swiperH[obj]
                    });
                },
                reachBeginning: function(){
-
 
                    $(swiperH).each(function(obj) {
                       swiperH[obj].allowSlideNext = false;
@@ -44,7 +53,6 @@
 
                },
                fromEdge: function(){
-
 
                    $(swiperH).each(function(obj) {
                       swiperH[obj].allowSlideNext = true;
@@ -73,17 +81,23 @@
                reachEnd: function(){
                    swiperV.allowSlideNext = false;
                    swiperV.allowSlidePrev = false;
+                   swiperV.mousewheel = false;
 
                     $( ".swiper-pagination-v" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
                     $( ".backbtntop" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight d-none');
                     $( ".swiper-slide-h" ).scrollTop( 0 );
 
+                    location.href = '#' + idcontent[id];
+                    parent.location.hash = '';
+
                },
                reachBeginning: function(){
-
                    swiperV.allowSlideNext = true;
                    swiperV.allowSlidePrev = true;
+                   swiperV.mousewheel = true;
+
+
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
                     $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
