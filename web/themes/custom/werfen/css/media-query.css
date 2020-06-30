@@ -22,8 +22,7 @@
 		max-width: 201px;
 	    display: block;
 	}
-	.node--view-mode-full .field--name-field-image img, 
-	.node--view-mode-full .field--name-field-image-2 img
+	article.node--type-article.node--view-mode-full .field--name-field-image-2 img
 	{
 		height: 400px;
 	}
@@ -46,5 +45,9 @@
 		margin: auto;
 		width: 270px;
 		display: block;
+	}
+	.footer-page {
+    top: 40% !important;
+    right: 25% !important;
 	}
 }
