@@ -25,7 +25,7 @@ body {
   margin: 50px auto;
   width: 200px;
   height: 80px;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   bottom: 0;
   left: 5%;
@@ -77,6 +77,12 @@ left: 14px;
     opacity: 1;
     background: none;
     margin: 30px 18px !important;
+}
+
+.scroll-v-icon{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
 }
 
 .swiper-pagination-v {

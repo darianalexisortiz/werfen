@@ -109,7 +109,7 @@
           };
           swiperH = new Swiper('.swiper-container-h', settingsH);
 
-          $('.backbtn').click(function(e) {
+          $('.backbtn').on('click touchend', function(e) {
             e.preventDefault();
             swiperH[id].slidePrev();
           });
@@ -117,50 +117,55 @@
           var sizeSwitch = 290;
           var switchHandle = $('.switch .handle');
           var switchArea =  $('.switch');
-
+          let switchPosition;
           switchHandle.draggable({
             axis: 'x',
             containment: 'parent',
             stop: function() {
               conditionMove();
+            },
+            drag: function(e,ui) {
+                swiperH[id].setTranslate( - ui.position.left);
+                switchPosition = ui.position.left;
+
             }
           });
 
-          switchArea.click(function() {
+          switchArea.on('click touchend', function() {
             conditionMoveSnap();
+
           });
 
 
           function conditionMove() {
-            if(parseInt(switchHandle.css('left')) <= (sizeSwitch / 2)) {
+            if(switchPosition <= (sizeSwitch / 2)) {
               switchHandle.animate({
                 left: 0
               }, 200);
-              $( ".handletext" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
+               swiperH[id].slidePrev();
             }
             else {
               switchHandle.animate({
                 left: sizeSwitch + 'px'
               }, 200);
-                $( ".handletext" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
 
                swiperH[id].slideNext();
             }
           }
 
         function conditionMoveSnap() {
-          if(parseInt(switchHandle.css('left')) == sizeSwitch) {
+          if(switchPosition == sizeSwitch) {
             switchHandle.animate({
               left: 0
             }, 200);
-          $( ".handletext" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
+               swiperH[id].slidePrev();
           }
           else {
             switchHandle.animate({
               left: sizeSwitch + 'px'
             }, 200, function() {
-            swiperH[id].slideNext();
-            $( ".handletext" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
+
+               swiperH[id].slideNext();
             });
   }
 }
@@ -169,7 +174,7 @@ function conditionMoveSnap2() {
     switchHandle.animate({
       left: 0
     }, 200);
-                  $( ".handletext" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
+
 }
 
    }

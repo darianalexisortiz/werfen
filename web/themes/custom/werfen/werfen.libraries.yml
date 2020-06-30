@@ -11,6 +11,7 @@ global-scripts:
     https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js: { type: external, minified: true }
     https://unpkg.com/swiper/js/swiper.min.js: { type: external }
     https://canvasjs.com/assets/script/canvasjs.min.js: { type: external }
+    js/jquery.ui.touch-punch.min.js: {}
     js/swiper.js: {}
     js/main.js: {}
   dependencies:
