@@ -4,6 +4,7 @@ global-styling:
       https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css: { type: external, minified: true }
       https://unpkg.com/swiper/css/swiper.min.css: { type: external, minified: true }
       css/style.css: {}
+      css/media-query.css: {}
       css/node-article.css: {}
       css/swiper.css: {}
 global-scripts:

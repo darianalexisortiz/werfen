@@ -76,7 +76,7 @@ left: 14px;
     color: #fff;
     opacity: 1;
     background: none;
-    margin: 50px 20px !important;
+    margin: 75% 20px !important;
 }
 
 .scroll-v-icon{
@@ -101,8 +101,8 @@ left: 14px;
 
 .footer-page{
   position: absolute;
-  top: 50%;
-  right: 50%;
+  top: 43%;
+  right: 43%;
   text-align: center;
   font-size: 26px;
   color:#fff;
