@@ -123,7 +123,7 @@ left: 14px;
   text-align: center;
   border-radius: 14px;
   color: #fff;
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 26px;
   padding: 5px 17px;
   margin: 20px 0;
@@ -142,8 +142,8 @@ color: #fff;
 
 .node--type-page.node--view-mode-teaser .btn-pdf-download{
   position: absolute;
-  bottom: 10px;
-  left: 40px;
+  bottom: 15%;
+  left: 5%;  
   z-index: 1;
   color: #089eda;
   border-color: #089eda;
@@ -154,7 +154,9 @@ color: #fff;
 }
 
 .navbar-brand .site-logo img{
- width: 58px;
+     width: 45px;
+    margin: 1px;
+    margin-bottom: -5px;
 }
 
 
