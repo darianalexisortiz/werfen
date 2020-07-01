@@ -81,7 +81,8 @@
                reachEnd: function(){
                    swiperV.allowSlideNext = false;
                    swiperV.allowSlidePrev = false;
-                   swiperV.mousewheel = false;
+                    swiperV.mousewheel.disable();
+
 
                     $( ".swiper-pagination-v" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeOutDown').removeClass('animate__fadeInUp');
@@ -103,8 +104,7 @@
                reachBeginning: function(){
                    swiperV.allowSlideNext = true;
                    swiperV.allowSlidePrev = true;
-                   swiperV.mousewheel = true;
-
+                    swiperV.mousewheel.enable();
 
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
