@@ -61,7 +61,7 @@ display:none !important;
 .col-md-6#chart2,
 .col-md-6#chart3,
 .col-md-6#chart4{
-height: 330px;
+height: 315px !important;
 overflow: hidden;
 }
 .col-md-6#chart1 .canvasjs-chart-container,
