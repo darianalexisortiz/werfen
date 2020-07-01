@@ -77,7 +77,7 @@ left: 14px;
     color: #fff;
     opacity: 1;
     background: none;
-    margin: 75% 20px !important;
+    margin: 6vh 20px !important;
 }
 
 .scroll-v-icon{
@@ -124,7 +124,7 @@ left: 14px;
   text-align: center;
   border-radius: 50px;
   color: #fff;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 26px;
   padding: 13px 91px;
   margin: 20px 0;
@@ -148,11 +148,13 @@ margin: 30px;
 }
 
 .node--type-page.node--view-mode-teaser h2 span{
-color: #089eda;
+color: #fff;
 }
 
 .navbar-brand .site-logo img{
- width: 58px;
+     width: 45px;
+    margin: 1px;
+    margin-bottom: -5px;
 }
 
 

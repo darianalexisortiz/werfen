@@ -8154,11 +8154,12 @@ a.tabledrag-handle .handle {
   position: absolute;
   top: 375px;
   left: 20px;
+  z-index: 1;
  }
 
 h2 .field--name-title {
   color: #fff;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
@@ -8206,3 +8207,8 @@ main .container-fluid, main .container-sm, main .container-md, main .container-l
   background: #007aff; }
 
 /*# sourceMappingURL=style.css.map */
+
+.navbar-brand.d-flex.align-items-center{
+  margin-top: 2rem;
+  margin-left: 3rem;
+}

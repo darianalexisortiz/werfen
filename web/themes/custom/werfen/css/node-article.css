@@ -44,7 +44,21 @@
 }
 .download a,.back .backbtn{
 	color:#fff;
+	cursor: pointer;
 }
 .node--view-mode-full #footer{
-	margin-top: 50px;
+	margin-top: 200px;
+}
+.animate__animated.animate__fadeInRight.backbtn.backbtntop{
+	margin-top: 30px;
+	margin-right:30px;
+	cursor: pointer;
+}
+a.canvasjs-chart-credit{
+display:none !important;
+}
+.canvasjs-chart-canvas {
+  overflow: hidden;
+  height: 345px !important;
+  display: block;
 }
