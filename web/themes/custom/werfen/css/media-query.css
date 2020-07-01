@@ -19,11 +19,12 @@
 	}
 	h2 .field--name-title {
 		font-size: 34px;
-		max-width: 201px;
+		max-width: 250px;
 	    display: block;
+	    margin-left: 0.5rem;
 	}
-	.node--view-mode-full .field--name-field-image img, 
-	.node--view-mode-full .field--name-field-image-2 img
+
+	article.node--type-article.node--view-mode-full .field--name-field-image-2 img
 	{
 		height: 400px;
 	}
@@ -46,5 +47,18 @@
 		margin: auto;
 		width: 270px;
 		display: block;
+	}
+
+	.footer-page {
+    top: 40% !important;
+    right: 25% !important;
+    }
+	.navbar-brand.d-flex.align-items-center{
+		margin-left: 0rem;
+	}
+	.node--type-page.node--view-mode-teaser .btn-pdf-download {
+	    position: absolute;
+	    bottom: 15%;
+	    left: 2%;
 	}
 }
