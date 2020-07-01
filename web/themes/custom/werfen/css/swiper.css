@@ -12,6 +12,7 @@ nav.navbar{
 body {
   background: #24282E;
   font-family: 'Noto Sans', sans-serif;
+  overflow: hidden;
 }
 
 .swiper-container-1{
