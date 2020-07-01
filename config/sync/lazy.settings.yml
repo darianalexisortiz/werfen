@@ -24,8 +24,8 @@ lazysizes:
   init: true
   expFactor: 1.5
   hFac: 0.8
-  loadMode: 2
-  loadHidden: true
+  loadMode: 3
+  loadHidden: false
   ricTimeout: 0
   throttleDelay: 66
   plugins: {  }

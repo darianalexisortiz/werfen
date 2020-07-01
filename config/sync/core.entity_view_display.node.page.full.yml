@@ -12,7 +12,7 @@ dependencies:
   module:
     - field_formatter_class
     - file
-    - lazy
+    - responsive_image
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -32,7 +32,7 @@ content:
     type: file_default
     region: content
   field_image_2:
-    type: lazy_responsive_image
+    type: responsive_image
     weight: 0
     region: content
     label: hidden
