@@ -12,7 +12,7 @@ dependencies:
     - responsive_image.styles.wide
   module:
     - field_formatter_class
-    - lazy
+    - responsive_image
     - user
 _core:
   default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
@@ -22,7 +22,7 @@ bundle: article
 mode: teaser
 content:
   field_image:
-    type: lazy_responsive_image
+    type: responsive_image
     weight: 0
     region: content
     label: hidden
