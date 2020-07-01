@@ -57,8 +57,16 @@
 a.canvasjs-chart-credit{
 display:none !important;
 }
-.canvasjs-chart-canvas {
-  overflow: hidden;
-  height: 345px !important;
-  display: block;
+.col-md-6#chart1,
+.col-md-6#chart2,
+.col-md-6#chart3,
+.col-md-6#chart4{
+height: 330px;
+overflow: hidden;
+}
+.col-md-6#chart1 .canvasjs-chart-container,
+.col-md-6#chart2 .canvasjs-chart-container,
+.col-md-6#chart3 .canvasjs-chart-container,
+.col-md-6#chart4 .canvasjs-chart-container{
+height: 340px;
 }
