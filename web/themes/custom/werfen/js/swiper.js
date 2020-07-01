@@ -91,6 +91,14 @@
                     location.href = '#' + idcontent[id];
                     parent.location.hash = '';
 
+                    $('.swiper-slide-h').scroll(function() {
+                      if ($(this).scrollTop() > 10) {
+                        $('.navbar').fadeOut();
+                      } else {
+                        $('.navbar').fadeIn();
+                      }
+                    });
+
                },
                reachBeginning: function(){
                    swiperV.allowSlideNext = true;
