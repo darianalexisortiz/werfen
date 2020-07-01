@@ -26,6 +26,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/drush": "^6.0@RC",
         "drupal/field_formatter_class": "^1.4",
         "drupal/lazy": "^3.4",
         "drupal/redirect": "^1.6",

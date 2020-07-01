@@ -102,11 +102,15 @@ left: 14px;
 
 .footer-page{
   position: absolute;
-  top: 43%;
-  right: 43%;
+  align-items: center;
   text-align: center;
   font-size: 26px;
   color:#fff;
+  top:43%;
+}
+.node--type-page.node--view-mode-full{
+  display: flex;
+  align-items: center;
 }
 
 .footer-page a:hover{
