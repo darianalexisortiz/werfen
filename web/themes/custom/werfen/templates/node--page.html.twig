@@ -92,20 +92,20 @@
       {% endif %}
       {{ title_suffix }}
 
-<a href="{{ file_url(node.field_attached_file.entity.fileuri) }}" class="btn-pdf-download">
-PDF Version
+<a href="{{ file_url(node.field_attached_file.entity.fileuri) }}" class="btn-pdf-download swiper-no-swiping">
+<span>PDF Version</span>
 
 <svg width="22px" height="25px" version="1.1" viewBox="0 0 12.32 13.617" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-91.358 -73.323)">
   <g transform="matrix(.35278 0 0 -.35278 -374.69 96.245)">
    <g transform="translate(1338.5 64.977)">
-    <path d="m0 0v-31.247" fill="none" stroke="#089eda" stroke-miterlimit="10" stroke-width="1.838"/>
+    <path d="m0 0v-31.247" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.838"/>
    </g>
    <g transform="translate(1328.4 43.839)">
-    <path d="M 0,0 10.109,-10.109 20.219,0" fill="none" stroke="#089eda" stroke-miterlimit="10" stroke-width="1.838"/>
+    <path d="M 0,0 10.109,-10.109 20.219,0" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.838"/>
    </g>
    <g transform="translate(1322 38.325)">
-    <path d="m0 0v-11.028h33.085v11.028" fill="none" stroke="#089eda" stroke-miterlimit="10" stroke-width="1.838"/>
+    <path d="m0 0v-11.028h33.085v11.028" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.838"/>
    </g>
   </g>
  </g>
@@ -116,7 +116,7 @@ PDF Version
         {{ content }}
       </div>
 
-      <div class="scroll-v-icon animate__animated animate__delay-3s animate__slow animate__shakeY animate__repeat-3">
+      <div class="scroll-v-icon animate__animated animate__delay-2s animate__slow animate__shakeY animate__repeat-3">
 
       <svg id="Componente_5_2" data-name="Componente 5 – 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="82.973" viewBox="0 0 30 82.973">
   <defs>
@@ -154,10 +154,11 @@ PDF Version
 
              <div{{ content_attributes.addClass('node__content') }}>
                {{ content }}
-<div class="footer-page">
+<div class="footer-page row justify-content-md-center flex-column swiper-no-swiping">
 <a href="{{ file_url(node.field_attached_file.entity.fileuri) }}" class="btn-pdf-download">
+<span>
 PDF Version
-
+</span>
 <svg width="22px" height="25px" version="1.1" viewBox="0 0 12.32 13.617" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-91.358 -73.323)">
   <g transform="matrix(.35278 0 0 -.35278 -374.69 96.245)">
@@ -176,7 +177,8 @@ PDF Version
 </a>
 
 <span>Share it</span>
-<a href="#">
+<div class="align-items">
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://werfen.com" target="_blank">
 <svg class="social-icons social-in" width="40px" height="40px" version="1.1" viewBox="0 0 5.2917 5.2916" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-160.5 -168.81)">
   <g transform="matrix(.097307 0 0 -.097307 101.73 207.15)">
@@ -194,7 +196,7 @@ PDF Version
  </g>
 </svg>
 </a>
-<a href="#">
+<a href="http://twitter.com/intent/tweet?text=https://werfen.com" target="_blank">
 <svg class="social-icons social-tw" width="40px" height="40px" version="1.1" viewBox="0 0 5.2917 5.2917" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-79.846 -119.16)">
   <g transform="matrix(.097309 0 0 -.097309 14.135 157.49)">
@@ -208,7 +210,7 @@ PDF Version
  </g>
 </svg>
 </a>
-<a href="#">
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://werfen.com" target="_blank">
 <svg class="social-icons social-fa" width="40px" height="40px" version="1.1" viewBox="0 0 5.2917 5.2916" xmlns="http://www.w3.org/2000/svg">
  <g transform="translate(-125.44 -107.3)">
   <g transform="matrix(.097307 0 0 -.097307 52.783 145.63)">
@@ -223,6 +225,7 @@ PDF Version
 </svg>
 </div>
 </a>
+<div>
              </div>
 
 
