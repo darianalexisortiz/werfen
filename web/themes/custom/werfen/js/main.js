@@ -20,11 +20,13 @@
             title:{
               text: "↑",
               fontSize: 50,
+              fontFamily: "Noto Sans",
               fontColor: "#3b67ad"
             },
             subtitles: [{
               text: " Net Profit",
               fontSize: 23,
+              fontFamily: "Noto Sans",
               fontColor:"#28373C"
             }],
             axisX: {
@@ -77,11 +79,13 @@
             title:{
               text: "→",
               fontSize: 50,
+              fontFamily: "Noto Sans",
               fontColor: "#3b67ad"
             },
             subtitles: [{
               text: "Net Worth",
               fontSize: 23,
+              fontFamily: "Noto Sans",
               fontColor:"#28373C"
             }],
             axisX: {
@@ -134,11 +138,13 @@
             title:{
               text: "↑",
               fontSize: 50,
+              fontFamily: "Noto Sans",
               fontColor: "#3b67ad"
             },
             subtitles: [{
               text: "EBITA (Before Interest, Taxes, Depreciation & Amortization)",
               fontSize: 16,
+              fontFamily: "Noto Sans",
               fontColor:"#28373C"
             }],
             axisX: {
@@ -191,11 +197,13 @@
             title:{
               text: "↑",
               fontSize: 50,
+              fontFamily: "Noto Sans",
               fontColor: "#3b67ad"
             },
             subtitles: [{
               text: "Investment in R&D",
               fontSize: 23,
+              fontFamily: "Noto Sans",
               fontColor:"#28373C"
             }],
             axisX: {
@@ -241,6 +249,7 @@
             title:{
               text: "Total sale",
               fontSize: 23,
+              fontFamily: "Noto Sans",
               fontColor: "#757679"
             },
             data: [{
