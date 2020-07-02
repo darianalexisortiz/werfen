@@ -65,4 +65,7 @@
 	.copete-financial h3{
 		font-size: 30px;
 	}
+	.nodeid2.node--view-mode-full .field--name-field-image-2 img{
+		object-position: 8%;
+	}
 }
