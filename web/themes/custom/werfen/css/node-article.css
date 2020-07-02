@@ -54,6 +54,7 @@
 }
 .node--view-mode-full #footer{
 	margin-top: 200px;
+	flex-wrap: wrap-reverse;
 }
 .backbtn.backbtntop{
   cursor: pointer;
