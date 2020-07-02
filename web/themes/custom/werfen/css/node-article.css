@@ -31,9 +31,10 @@
 }
 .bio span{
 	color: #00A3E0;
-    display: block;
-    font-size: 12px;
-    margin-bottom: 30px;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 30px;
+	margin-top: 10px;
 }
 .download
 {
