@@ -13,7 +13,7 @@
     background-image: url('../img/firma.png');
 }
 .copete-financial h3{
-	color: #00A3E0;
+	color: #00A3E0 !important;
     text-align: center;
     font-size: 40px;
     margin-bottom: 50px;
