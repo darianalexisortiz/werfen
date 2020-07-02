@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: 'Noto Sans', sans-serif;
   margin-top: 0;
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
   color:#91A7B2;
   font-weight: lighter;
 }
@@ -8131,7 +8131,7 @@ a.tabledrag-handle .handle {
 .node--view-mode-teaser h2 {
   position: absolute;
   top: 50%;
-  z-index: 999; 
+  z-index: 999;
   left: 50px;
 }
 
@@ -8146,30 +8146,30 @@ object-position: right;
 .nodeid1.node--view-mode-teaser .field--name-field-imsage img{
   object-position: 70%;
 }
-.node--view-mode-full .field--name-field-image img, 
+.node--view-mode-full .field--name-field-image img,
 .node--view-mode-full .field--name-field-image-2 img {
   height: auto;
   width: 100vw;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .node--type-page .field--name-field-image-2 img {
   height: 100vh;
   width: 100vw;
-  object-fit: cover; 
+  object-fit: cover;
   object-position: left;
 }
 
 .node--view-mode-full h2 {
   position: absolute;
-  top: 17vh;
+  top: 24vw;
   left: 6vw;
   z-index: 1;
  }
 
 h2 .field--name-title {
   color: #fff;
-  font-size: 3.5rem;
+  font-size: 5vw;
   font-weight: bold;
 }
 

@@ -1,9 +1,9 @@
-@media (max-width:480px)  { 
+@media (max-width:480px)  {
 
 	.swiper-pagination.swiper-pagination-v{
 		top: -50px !important;
 	}
-	.switch, 
+	.switch,
 	.btn-pdf-download
 	{
 		width: 270px !important;
@@ -13,7 +13,7 @@
 	    font-size: 18px !important;
 	    top: 19px !important;
 	    right: 35px !important;
-	} 
+	}
 	.node--view-mode-teaser h2{
 		left: 0px;
 		margin: 15px !important;

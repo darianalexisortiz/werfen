@@ -128,7 +128,6 @@
             swiperH[id].slidePrev();
           });
 
-          var sizeSwitch = 290;
           var switchHandle = $('.switch .handle');
           var switchArea =  $('.switch');
           let switchPosition;
@@ -139,7 +138,7 @@
               conditionMove();
             },
             drag: function(e,ui) {
-            var dragporcent = ui.position.left * 99 / sizeSwitch;
+            var dragporcent = ui.position.left * 99 / $('.switch').width();
             var pantp = Math.round(dragporcent) * $( window ).width() / 100;
             swiperH[id].setTranslate( - pantp );
             switchPosition = ui.position.left;
@@ -147,14 +146,13 @@
             }
           });
 
-          switchArea.on('click touchend', function() {
+          switchArea.on('click touchmove', function() {
             conditionMoveSnap();
-
           });
 
 
           function conditionMove() {
-            if(switchPosition <= (sizeSwitch / 2)) {
+            if(switchPosition <= ($('.switch').width() / 2)) {
               switchHandle.animate({
                 left: 0
               }, 200);
@@ -162,7 +160,7 @@
             }
             else {
               switchHandle.animate({
-                left: sizeSwitch + 'px'
+                left: $('.switch').width() + 'px'
               }, 200);
 
                swiperH[id].slideNext();
@@ -170,7 +168,7 @@
           }
 
         function conditionMoveSnap() {
-          if(switchPosition == sizeSwitch) {
+          if(switchPosition == $('.switch').width()) {
             switchHandle.animate({
               left: 0
             }, 200);
@@ -178,7 +176,7 @@
           }
           else {
             switchHandle.animate({
-              left: sizeSwitch + 'px'
+              left: $('.switch').width() + 'px'
             }, 200, function() {
 
                swiperH[id].slideNext();

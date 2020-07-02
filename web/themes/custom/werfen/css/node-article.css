@@ -1,6 +1,7 @@
 .node--type-article.node--view-mode-full .node__content .field--name-body
 {
 	max-width: 800px;
+	padding: 0 5vw;
 	margin: auto;
 }
 .node--type-article.node--view-mode-full .node__content .field--name-field-image-2{
