@@ -142,7 +142,6 @@
             var pantp = Math.round(dragporcent) * $( window ).width() / 100;
             swiperH[id].setTranslate( - pantp );
             switchPosition = ui.position.left;
-
             }
           });
 
@@ -160,9 +159,8 @@
             }
             else {
               switchHandle.animate({
-                left: $('.switch').width() + 'px'
+                left: ($('.switch').width() - 50) + 'px'
               }, 200);
-
                swiperH[id].slideNext();
             }
           }
@@ -176,9 +174,8 @@
           }
           else {
             switchHandle.animate({
-              left: $('.switch').width() + 'px'
+              left: ($('.switch').width() - 50) + 'px'
             }, 200, function() {
-
                swiperH[id].slideNext();
             });
   }

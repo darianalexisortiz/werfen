@@ -54,10 +54,10 @@
 .node--view-mode-full #footer{
 	margin-top: 200px;
 }
-.animate__animated.animate__fadeInRight.backbtn.backbtntop{
-	margin-top: 30px;
-	margin-right:30px;
-	cursor: pointer;
+.backbtn.backbtntop{
+  cursor: pointer;
+  padding: 18px;
+  margin-top: 25px;
 }
 a.canvasjs-chart-credit{
 display:none !important;
