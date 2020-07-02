@@ -1,7 +1,7 @@
 .node--type-article.node--view-mode-full .node__content .field--name-body
 {
-	max-width: 800px;
-	padding: 0 5vw;
+	max-width: 1000px;
+	padding: 0;
 	margin: auto;
 }
 .node--type-article.node--view-mode-full .node__content .field--name-field-image-2{
@@ -15,9 +15,9 @@
 }
 .copete-financial h3{
 	color: #00A3E0 !important;
-    text-align: center;
+    text-align: left;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 80px !important;
 }
 .color1{
 	color: #c5d7db;
@@ -58,6 +58,7 @@
   cursor: pointer;
   padding: 18px;
   margin-top: 25px;
+  margin-right: 7vh;
 }
 a.canvasjs-chart-credit{
 display:none !important;

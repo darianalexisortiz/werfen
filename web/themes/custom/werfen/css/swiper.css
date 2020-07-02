@@ -145,6 +145,7 @@ left: 14px;
 
 .node--view-mode-teaser h2{
 margin: 30px;
+max-width: 900px;
 }
 
 .node--type-page.node--view-mode-teaser h2 span{
