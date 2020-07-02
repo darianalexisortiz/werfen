@@ -78,7 +78,6 @@
     node.isSticky() ? 'node--sticky',
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
-   'swiper-no-swiping',
    'nodeid' ~ node.id,
 
   ]
@@ -113,7 +112,7 @@
     </article>
     {% else %}
 
-          <article{{ attributes.addClass(classes) }}>
+          <article{{ attributes.addClass(classes, 'swiper-no-swiping') }}>
             <a id="content-article-{{ node.id }}" class="content-id"></a>
             {{ title_prefix }}
             {% if label and not page %}
