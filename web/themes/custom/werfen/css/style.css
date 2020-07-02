@@ -8140,15 +8140,25 @@ a.tabledrag-handle .handle {
   width: 100vw;
   object-fit: cover; }
 
-.node--view-mode-full .field--name-field-image img, .node--view-mode-full .field--name-field-image-2 img {
+.node--type-page .node--view-mode-teaser .field--name-field-image img{
+object-position: right;
+}
+.nodeid1.node--view-mode-teaser .field--name-field-imsage img{
+  object-position: 70%;
+}
+.node--view-mode-full .field--name-field-image img, 
+.node--view-mode-full .field--name-field-image-2 img {
   height: auto;
   width: 100vw;
-  object-fit: cover; }
+  object-fit: cover; 
+}
 
 .node--type-page .field--name-field-image-2 img {
   height: 100vh;
   width: 100vw;
-  object-fit: cover; }
+  object-fit: cover; 
+  object-position: left;
+}
 
 .node--view-mode-full h2 {
   position: absolute;
