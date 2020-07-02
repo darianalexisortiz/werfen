@@ -152,9 +152,12 @@ color: #fff;
 }
 
 .navbar-brand .site-logo img{
-     width: 45px;
+    width: 45px;
     margin: 1px;
     margin-bottom: -5px;
 }
 
+.share-icons{
+ margin-top:10px;
+}
 
