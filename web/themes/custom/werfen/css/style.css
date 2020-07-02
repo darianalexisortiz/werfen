@@ -8140,7 +8140,7 @@ a.tabledrag-handle .handle {
   width: 100vw;
   object-fit: cover; }
 
-.node--type-page .node--view-mode-teaser .field--name-field-image img{
+.node--type-page.node--view-mode-teaser .field--name-field-image img{
 object-position: right;
 }
 .nodeid1.node--view-mode-teaser .field--name-field-imsage img{
