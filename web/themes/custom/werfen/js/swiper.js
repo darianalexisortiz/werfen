@@ -94,7 +94,7 @@
                     $( ".thething" ).addClass('animate__animated animate__fadeOutRight').removeClass('animate__fadeInRight');
                     location.href = '#' + idcontent[id];
                     parent.location.hash = '';
-
+					$( ".navbar" ).css('width', '100%');
                     $('.swiper-slide-h').scroll(function() {
                       if ($(this).scrollTop() > 10) {
                         $('.navbar').fadeOut();
@@ -109,6 +109,7 @@
                    swiperV.allowSlidePrev = true;
                     swiperV.mousewheel.enable();
 
+					$( ".navbar" ).css('width', 'auto');
                     $( ".swiper-pagination-v" ).addClass('animate__fadeInRight').removeClass('animate__fadeOutRight');
                     $( ".swiper-scrollbar-h" ).addClass('animate__fadeInUp').removeClass('animate__fadeOutDown');
                     $( ".backbtntop" ).addClass('animate__fadeOutRight').removeClass('animate__fadeInRight');
