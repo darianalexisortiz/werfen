@@ -70,3 +70,14 @@ overflow: hidden;
 .col-md-6#chart4 .canvasjs-chart-canvas{
 height: 330px !important;
 }
+.node--type-article.node--view-mode-full h3,
+.node--type-article.node--view-mode-full h4{
+margin-bottom: 25px;
+margin-top:25px;
+color: #000;
+}
+.node--type-article.node--view-mode-full li{
+	color: #91A7B2;
+}
+
+
