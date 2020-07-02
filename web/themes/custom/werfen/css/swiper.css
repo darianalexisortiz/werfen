@@ -78,6 +78,7 @@ left: 14px;
     opacity: 1;
     background: none;
     margin: 6vh 20px !important;
+    outline: none;
 }
 
 .scroll-v-icon{
@@ -94,6 +95,7 @@ left: 14px;
 
 .swiper-pagination-bullet-active{
   border:1px solid #fff;
+  outline: none;
 }
 
 .node--view-mode-teaser .field--name-field-image img, .node--type-page .field--name-field-image img, .node--type-page .field--name-field-image-2 img{
