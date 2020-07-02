@@ -8122,7 +8122,7 @@ a.tabledrag-handle .handle {
 
 .navbar {
   position: absolute;
-  width: 100%;
+  width: auto;
   z-index: 9999; }
 
 .navbar-dark .navbar-brand img, .footer-dark .navbar-brand img {
