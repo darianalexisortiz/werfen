@@ -3,7 +3,9 @@
 	.swiper-pagination.swiper-pagination-v{
 		top: -50px !important;
 	}
-	.switch{
+	.switch, 
+	.btn-pdf-download
+	{
 		width: 270px !important;
 	    padding: 10px !important;
 	}
@@ -49,11 +51,6 @@
 		display: block;
 		text-align: center;
 	}
-
-	.footer-page {
-    top: 40% !important;
-    right: 25% !important;
-    }
 	.navbar-brand.d-flex.align-items-center{
 		margin-left: 0rem;
 	}
@@ -67,5 +64,8 @@
 	}
 	.nodeid2.node--view-mode-full .field--name-field-image-2 img{
 		object-position: 8%;
+	}
+	.scroll-v-icon{
+		display: none;
 	}
 }
