@@ -8152,8 +8152,8 @@ a.tabledrag-handle .handle {
 
 .node--view-mode-full h2 {
   position: absolute;
-  top: 375px;
-  left: 20px;
+  top: 17vh;
+  left: 6vw;
   z-index: 1;
  }
 
@@ -8209,6 +8209,6 @@ main .container-fluid, main .container-sm, main .container-md, main .container-l
 /*# sourceMappingURL=style.css.map */
 
 .navbar-brand.d-flex.align-items-center{
-  margin-top: 2rem;
-  margin-left: 3rem;
+  margin-top: 2vw;
+  margin-left: 6vw;
 }

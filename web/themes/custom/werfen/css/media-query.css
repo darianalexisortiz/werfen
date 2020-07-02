@@ -47,6 +47,7 @@
 		margin: auto;
 		width: 270px;
 		display: block;
+		text-align: center;
 	}
 
 	.footer-page {
@@ -60,5 +61,8 @@
 	    position: absolute;
 	    bottom: 15%;
 	    left: 2%;
+	}
+	.copete-financial h3{
+		font-size: 30px;
 	}
 }
