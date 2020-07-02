@@ -68,4 +68,7 @@
 	.scroll-v-icon{
 		display: none;
 	}
+	.canvasjs-chart-container{
+		left: -15px;
+	}
 }
