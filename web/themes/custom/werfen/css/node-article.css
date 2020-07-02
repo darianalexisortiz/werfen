@@ -32,6 +32,7 @@
 	color: #00A3E0;
     display: block;
     font-size: 12px;
+    margin-bottom: 30px;
 }
 .download
 {
@@ -45,6 +46,9 @@
 .download a,.back .backbtn{
 	color:#fff;
 	cursor: pointer;
+}
+.download a{
+	text-align: center;
 }
 .node--view-mode-full #footer{
 	margin-top: 200px;
