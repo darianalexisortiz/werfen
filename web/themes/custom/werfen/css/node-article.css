@@ -65,6 +65,7 @@
 a.canvasjs-chart-credit{
 display:none !important;
 }
+.col-md-6#torta,
 .col-md-6#chart1,
 .col-md-6#chart2,
 .col-md-6#chart3,
@@ -72,6 +73,7 @@ display:none !important;
 height: 315px !important;
 overflow: hidden;
 }
+.col-md-6#torta .canvasjs-chart-canvas,
 .col-md-6#chart1 .canvasjs-chart-canvas,
 .col-md-6#chart2 .canvasjs-chart-canvas,
 .col-md-6#chart3 .canvasjs-chart-canvas,
