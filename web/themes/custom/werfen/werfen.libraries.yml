@@ -7,6 +7,7 @@ global-styling:
       css/media-query.css: {}
       css/node-article.css: {}
       css/swiper.css: {}
+      css/custom.css: {}
 global-scripts:
   js:
     https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js: { type: external, minified: true }
