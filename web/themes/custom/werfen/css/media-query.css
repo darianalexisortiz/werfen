@@ -78,7 +78,7 @@
 		font-size: 1.25rem;
 	}
 	.backbtn.backbtntop{
-		margin-right: 1vh;
+		margin-right: 1vh !important;
 	}
 
 }
