@@ -246,7 +246,7 @@
           var torta = new CanvasJS.Chart("torta", {
             animationEnabled: true,
             colorSet: "torta",
-            subtitles:{
+            title:{
               text: "Total sale",
               fontSize: 23,
               fontFamily: "Noto Sans",
