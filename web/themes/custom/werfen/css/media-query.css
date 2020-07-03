@@ -30,6 +30,9 @@
 	{
 		height: 400px;
 	}
+	article.nodeid6 .field--type-image img{
+		object-position: 80%;
+	}
 	.node--view-mode-full h2 {
 	    top: 175px;
 	    left: 20px;
@@ -73,6 +76,9 @@
 	}
 	p{
 		font-size: 1.25rem;
+	}
+	.backbtn.backbtntop{
+		margin-right: 1vh;
 	}
 
 }
