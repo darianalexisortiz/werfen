@@ -85,6 +85,9 @@
 	{
 		margin-bottom:100px ;
 	}
+	.node--type-page.node--view-mode-teaser .btn-pdf-download{
+		bottom: 15% !important
+	}
 
 }
 
