@@ -80,6 +80,11 @@
 	.backbtn.backbtntop{
 		margin-right: 1vh !important;
 	}
+	.col-md-6#chart1,
+	.col-md-6#chart3
+	{
+		margin-bottom:100px ;
+	}
 
 }
 
