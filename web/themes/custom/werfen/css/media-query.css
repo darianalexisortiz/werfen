@@ -1,3 +1,4 @@
+
 @media (max-width:480px)  {
 
 	.swiper-pagination.swiper-pagination-v{
@@ -89,6 +90,21 @@
 		bottom: 15% !important
 	}
 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+
+  p
+  {
+  	margin: 1rem;
+  }
+  .node--type-article.node--view-mode-full ul li{
+  	margin: 1rem;
+  }
+  .copete-financial h3{
+  	margin-left: 1rem;
+  }
 }
 
 
